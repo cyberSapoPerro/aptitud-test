@@ -1,0 +1,1102 @@
+[
+  {
+    "statement": "i a o f \n W Q T Q",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "r s c f \n F S P X",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "k f z a \n K F Q Q",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "y f h j \n K F H J",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "e y z s \n E Y Z S",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "j f j n \n Z C X A",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "p y p z \n E Z P F",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "c u p e \n C E M E",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "f o w m \n F R W M",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "g d a s \n G D A S",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "l z m a \n P L T W",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "a r p w \n F R O A",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "b y y w \n B X M W",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "b m u r \n B M U Z",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "q l n o \n Q L N O",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "q r o q \n A Q V A",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "l j l x \n P T L L",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "e z g j \n E N H J",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "c o s r \n N O S R",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "f n h d \n F N H D",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "m n m x \n W O S N",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "t c o j \n M D Q J",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "b m a n \n M W A N",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "u n d n \n U W D N",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "u f r n \n U F R N",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "p u r u \n V Q T L",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "h s r v \n H D M E",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "k k l x \n J K D X",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "n c g g \n O C G G",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "a e b d \n A E B D",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "s x l q \n H M J E",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "p d n l \n X T N D",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "m v o b \n M V Y X",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "c v e b \n U V E B",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "f h i x \n F H I X",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "r k c z \n U X Z B",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "v g c g \n Z G D M",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "r g u p \n P G U Y",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "u o v m \n U O J M",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "p a f r \n P A F R",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "h x g j \n W Q K W",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "y h s j \n I V M J",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "q r b k \n X R O K",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "b f m r \n B P M R",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "c u h r \n C U H R",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "v s p p \n H T K E",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "b w k p \n J Y K C",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "x d x t \n X E Z T",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "o c i i \n T C I I",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "w g u w \n W G U W",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "z a k t \n V O E D",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "i y d z \n Y Y P R",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "q r r z \n Q R B T",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "i l r v \n I N R V",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "v t m j \n V T M J",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "f e u n \n D V G T",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "i a z i \n I D Q K",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "n b a v \n N E K V",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "k y q u \n K C Q U",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "h p t d \n H P T D",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "j h g t \n U A B U",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "v e n s \n Q Q N P",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "a d r e \n A T R D",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "p v n y \n P M N Y",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "c o i m \n C O I M",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "u t x n \n H Z U B",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "b q x d \n T V X P",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "a g i p \n I G I T",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "b s j y \n B S Y Y",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "s s e e \n S S E E",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "t s a l \n B J M Q",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "e f i q \n L V I I",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "u j e o \n U V E J",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "t s v j \n U S V J",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "s u n a \n S U N A",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "a c w j \n E L Z H",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "w q d p \n W P C W",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "i s f s \n I T F O",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "z o p m \n Z O P Q",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "b q n u \n B Q N U",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "t v o j \n K O S N",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "e b c a \n P I C J",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "g e f w \n A E B W",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "s u r s \n S U U S",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "k t r g \n K T R G",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "j n j y \n U I D G",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "x n n d \n W T N W",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "q j g t \n M J G U",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "t v s y \n T V S A",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "j e h t \n J E H T",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "o g n q \n E Y F F",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "h a d s \n M C D E",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "v k y p \n V K A U",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "h z r e \n H Z M E",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "v z g c \n V Z G C",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  },
+  {
+    "statement": "t f q u \n Z P I G",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "p q w y \n N N W I",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "o w k q \n L W U Q",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "f c r o \n A C R O",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 3
+  },
+  {
+    "statement": "v m f t \n V M F T",
+    "options": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer": 4
+  }
+]

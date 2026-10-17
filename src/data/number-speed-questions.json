@@ -1,0 +1,902 @@
+[
+  {
+    "statement": "36   4   57",
+    "options": [
+      4,
+      57,
+      36
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "63   68   67",
+    "options": [
+      63,
+      68,
+      67
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "76   23   62",
+    "options": [
+      76,
+      23,
+      62
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "71   73   12",
+    "options": [
+      73,
+      12,
+      71
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "21   33   41",
+    "options": [
+      41,
+      21,
+      33
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "91   1   42",
+    "options": [
+      1,
+      42,
+      91
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "72   11   47",
+    "options": [
+      72,
+      47,
+      11
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "66   44   64",
+    "options": [
+      64,
+      66,
+      44
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "31   40   42",
+    "options": [
+      31,
+      42,
+      40
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "42   55   39",
+    "options": [
+      39,
+      42,
+      55
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "18   74   23",
+    "options": [
+      18,
+      74,
+      23
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "54   49   5",
+    "options": [
+      54,
+      5,
+      49
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "40   21   55",
+    "options": [
+      40,
+      21,
+      55
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "11   20   89",
+    "options": [
+      89,
+      11,
+      20
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "38   63   99",
+    "options": [
+      38,
+      99,
+      63
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "17   12   99",
+    "options": [
+      99,
+      12,
+      17
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "23   44   12",
+    "options": [
+      23,
+      44,
+      12
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "20   8   26",
+    "options": [
+      20,
+      8,
+      26
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "20   7   49",
+    "options": [
+      7,
+      49,
+      20
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "23   58   89",
+    "options": [
+      89,
+      23,
+      58
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "15   29   97",
+    "options": [
+      15,
+      29,
+      97
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "65   69   4",
+    "options": [
+      69,
+      4,
+      65
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "28   13   2",
+    "options": [
+      13,
+      28,
+      2
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "65   57   59",
+    "options": [
+      59,
+      65,
+      57
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "66   45   64",
+    "options": [
+      66,
+      64,
+      45
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "3   57   89",
+    "options": [
+      3,
+      89,
+      57
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "53   76   39",
+    "options": [
+      76,
+      53,
+      39
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "2   70   64",
+    "options": [
+      70,
+      2,
+      64
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "19   75   72",
+    "options": [
+      72,
+      75,
+      19
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "84   98   37",
+    "options": [
+      98,
+      37,
+      84
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "6   98   97",
+    "options": [
+      6,
+      98,
+      97
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "4   38   95",
+    "options": [
+      4,
+      95,
+      38
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "4   97   19",
+    "options": [
+      19,
+      97,
+      4
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "81   70   46",
+    "options": [
+      46,
+      81,
+      70
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "74   26   61",
+    "options": [
+      26,
+      74,
+      61
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "99   46   67",
+    "options": [
+      99,
+      67,
+      46
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "59   74   55",
+    "options": [
+      59,
+      55,
+      74
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "63   80   61",
+    "options": [
+      61,
+      63,
+      80
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "65   46   68",
+    "options": [
+      65,
+      46,
+      68
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "67   2   58",
+    "options": [
+      67,
+      2,
+      58
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "83   12   3",
+    "options": [
+      83,
+      12,
+      3
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "46   37   95",
+    "options": [
+      46,
+      95,
+      37
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "68   50   73",
+    "options": [
+      68,
+      73,
+      50
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "48   16   18",
+    "options": [
+      18,
+      16,
+      48
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "66   15   16",
+    "options": [
+      66,
+      15,
+      16
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "55   44   25",
+    "options": [
+      55,
+      25,
+      44
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "10   60   74",
+    "options": [
+      10,
+      60,
+      74
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "96   89   55",
+    "options": [
+      96,
+      55,
+      89
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "77   62   35",
+    "options": [
+      35,
+      77,
+      62
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "55   30   16",
+    "options": [
+      16,
+      55,
+      30
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "77   98   71",
+    "options": [
+      71,
+      77,
+      98
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "30   98   53",
+    "options": [
+      30,
+      98,
+      53
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "23   52   54",
+    "options": [
+      54,
+      23,
+      52
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "56   48   70",
+    "options": [
+      56,
+      70,
+      48
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "46   80   9",
+    "options": [
+      46,
+      9,
+      80
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "73   50   60",
+    "options": [
+      50,
+      60,
+      73
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "62   81   88",
+    "options": [
+      81,
+      62,
+      88
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "59   5   50",
+    "options": [
+      50,
+      5,
+      59
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "60   92   45",
+    "options": [
+      92,
+      60,
+      45
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "86   4   27",
+    "options": [
+      86,
+      4,
+      27
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "81   55   13",
+    "options": [
+      13,
+      81,
+      55
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "22   32   53",
+    "options": [
+      22,
+      32,
+      53
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "60   9   81",
+    "options": [
+      81,
+      9,
+      60
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "94   41   58",
+    "options": [
+      58,
+      41,
+      94
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "62   28   63",
+    "options": [
+      62,
+      28,
+      63
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "61   81   70",
+    "options": [
+      81,
+      61,
+      70
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "67   7   75",
+    "options": [
+      67,
+      75,
+      7
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "53   29   75",
+    "options": [
+      29,
+      53,
+      75
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "97   89   27",
+    "options": [
+      27,
+      89,
+      97
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "52   13   17",
+    "options": [
+      52,
+      17,
+      13
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "42   46   93",
+    "options": [
+      46,
+      42,
+      93
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "38   22   85",
+    "options": [
+      38,
+      22,
+      85
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "13   71   9",
+    "options": [
+      9,
+      71,
+      13
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "12   26   28",
+    "options": [
+      28,
+      26,
+      12
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "49   53   83",
+    "options": [
+      83,
+      49,
+      53
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "96   55   90",
+    "options": [
+      55,
+      96,
+      90
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "3   20   8",
+    "options": [
+      20,
+      8,
+      3
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "76   62   54",
+    "options": [
+      76,
+      54,
+      62
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "62   17   73",
+    "options": [
+      62,
+      17,
+      73
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "66   30   43",
+    "options": [
+      66,
+      43,
+      30
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "37   21   18",
+    "options": [
+      37,
+      18,
+      21
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "13   53   47",
+    "options": [
+      47,
+      13,
+      53
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "74   20   72",
+    "options": [
+      20,
+      72,
+      74
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "13   49   86",
+    "options": [
+      86,
+      13,
+      49
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "25   27   89",
+    "options": [
+      89,
+      25,
+      27
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "94   48   89",
+    "options": [
+      94,
+      48,
+      89
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "11   87   17",
+    "options": [
+      17,
+      87,
+      11
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "83   71   38",
+    "options": [
+      71,
+      83,
+      38
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "21   32   36",
+    "options": [
+      21,
+      32,
+      36
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "54   73   59",
+    "options": [
+      73,
+      59,
+      54
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "91   4   6",
+    "options": [
+      6,
+      4,
+      91
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "11   79   44",
+    "options": [
+      79,
+      11,
+      44
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "68   3   6",
+    "options": [
+      3,
+      6,
+      68
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "12   26   25",
+    "options": [
+      12,
+      26,
+      25
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "90   6   11",
+    "options": [
+      6,
+      90,
+      11
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "48   60   70",
+    "options": [
+      70,
+      60,
+      48
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "37   50   64",
+    "options": [
+      64,
+      37,
+      50
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "73   84   59",
+    "options": [
+      73,
+      84,
+      59
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "86   51   60",
+    "options": [
+      60,
+      86,
+      51
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "50   21   37",
+    "options": [
+      21,
+      37,
+      50
+    ],
+    "answer": 0
+  }
+]

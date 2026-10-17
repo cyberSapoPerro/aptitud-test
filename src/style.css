@@ -1,28 +1,7 @@
-
 :root {
   font-family: system-ui, sans-serif;
   color: #202124;
   background: #f5f5f5;
-}
-
-.start-screen {
-    text-align: center;
-    padding-block: 4rem;
-}
-
-.start-screen h1 {
-    margin-bottom: 1rem;
-}
-
-.start-screen p {
-    margin-bottom: 2rem;
-    color: #666;
-}
-
-#start {
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-    cursor: pointer;
 }
 
 body {
@@ -41,9 +20,106 @@ body {
   box-shadow: 0 4px 20px #0000000d;
 }
 
-.progress {
+.start-screen,
+.section-intro,
+.results {
+  text-align: center;
+}
+
+.start-screen,
+.section-intro {
+  padding-block: 4rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
   color: #666;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.start-screen h1 {
+  margin-bottom: 1rem;
+}
+
+.start-screen p,
+.section-intro p {
+  color: #666;
+}
+
+.section-overview {
+  display: grid;
+  gap: 0.75rem;
+  margin: 2rem 0 1rem;
+  text-align: left;
+}
+
+.section-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.section-number {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #202124;
+  color: white;
+  font-weight: 700;
+}
+
+.section-card div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.section-card small,
+.test-note {
+  color: #666;
+}
+
+.question-statement {
+  min-height: 5rem;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.numeric-statement,
+.perceptual-statement {
+  display: grid;
+  place-items: center;
+  min-height: 8rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-family: ui-monospace, monospace;
+  font-size: 2rem;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.perceptual-statement {
+  line-height: 1.7;
+  letter-spacing: 0.3em;
+}
+
+.number-speed-test .option {
+  font-family: ui-monospace, monospace;
+  font-size: 1.2rem;
+}
+
+.word-meaning-test .option {
+  font-size: 1.1rem;
 }
 
 .options {
@@ -81,9 +157,39 @@ button.incorrect {
 }
 
 #next,
-#restart {
+#restart,
+#start,
+#start-section,
+#download-results {
   width: 100%;
   background: #202124;
   color: white;
 }
 
+#download-results {
+  margin-bottom: 0.75rem;
+}
+
+.final-score {
+  margin: 2rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.final-score span {
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.results-list {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #eee;
+}

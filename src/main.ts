@@ -1,47 +1,100 @@
 import "./style.css";
-import questionsData from "./data/questions.json";
+import numberSpeedQuestions from "./data/number-speed-questions.json";
+import perceptualSpeedQuestions from "./data/perceptual-speed-questions.json";
+import reasoningQuestions from "./data/reasoning-questions.json";
+import wordMeaningQuestions from "./data/word-meaning-questions.json";
 
 type Question = {
     statement: string;
-    options: string[];
+    options: (string | number)[];
     answer: number;
 };
 
-const questions: Question[] = questionsData;
+type TestSection = {
+    id: "reasoning" | "number-speed" | "perceptual-speed" | "word-meaning";
+    title: string;
+    description: string;
+    questions: Question[];
+};
 
-// Validar las preguntas antes de iniciar el test
-for (const [index, question] of questions.entries()) {
-    if (
-        !Array.isArray(question.options) ||
-        question.options.length === 0 ||
-        !Number.isInteger(question.answer) ||
-        question.answer < 0 ||
-        question.answer >= question.options.length
-    ) {
-        throw new Error(
-            `Pregunta ${index + 1}: índice de respuesta inválido. ` +
-            `Los índices permitidos son de 0 a ${question.options.length - 1}.`,
-        );
+type QuestionResult = {
+    id: number;
+    section: string;
+    correct: boolean;
+    timeMs: number | null;
+};
+
+const sections: TestSection[] = [
+    {
+        id: "reasoning",
+        title: "Razonamiento",
+        description: "Relaciones lógicas y comparaciones.",
+        questions: reasoningQuestions,
+    },
+    {
+        id: "number-speed",
+        title: "Rapidez numérica",
+        description: "Identificación rápida de números.",
+        questions: numberSpeedQuestions,
+    },
+    {
+        id: "perceptual-speed",
+        title: "Rapidez perceptiva",
+        description: "Comparación visual de caracteres.",
+        questions: perceptualSpeedQuestions,
+    },
+    {
+        id: "word-meaning",
+        title: "Significado de palabras",
+        description: "Relaciones entre palabras y significados.",
+        questions: wordMeaningQuestions,
+    },
+];
+
+for (const section of sections) {
+    for (const [index, question] of section.questions.entries()) {
+        if (
+            !question.statement ||
+            !Array.isArray(question.options) ||
+            question.options.length === 0 ||
+            !Number.isInteger(question.answer) ||
+            question.answer < 0 ||
+            question.answer >= question.options.length
+        ) {
+            throw new Error(
+                `${section.title}, pregunta ${index + 1}: datos inválidos.`,
+            );
+        }
+    }
+
+    if (section.questions.length === 0) {
+        throw new Error(`La sección ${section.title} no contiene preguntas.`);
     }
 }
 
-if (questions.length === 0) {
-    throw new Error("El test debe contener al menos una pregunta.");
-}
-
-const TEST_DURATION = 30;
-const responseTimes: number[] = [];
-let answered = false;
+const SECTION_DURATION = 10;
+const questionResults = new Map<string, QuestionResult>();
+const sectionScores: number[] = [];
+let sectionIndex = 0;
 let currentQuestion = 0;
-let questionActiveSince = 0;
-let questionOrder: number [] = [];
+let questionOrder: number[] = [];
 let questionStartTime = 0;
+let sectionActiveSince = 0;
 let remainingTime = 0;
 let score = 0;
+let answered = false;
 let testFinished = false;
 let timerInterval: number | undefined;
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
+
+function currentSection(): TestSection {
+    return sections[sectionIndex];
+}
+
+function currentQuestions(): Question[] {
+    return currentSection().questions;
+}
 
 function shuffleIndices(length: number): number[] {
     const indices = Array.from({ length }, (_, index) => index);
@@ -55,9 +108,24 @@ function shuffleIndices(length: number): number[] {
 function renderStartScreen() {
     app.innerHTML = `
         <main class="test start-screen">
+            <p class="eyebrow">Evaluación de aptitud</p>
             <h1>Test de aptitud</h1>
-            <p>Dispones de 2 minutos para responder las preguntas.</p>
-            <button id="start">Ok</button>
+            <p>Completarás cuatro secciones, una por cada tipo de pregunta.</p>
+            <div class="section-overview">
+                ${sections.map(
+                    (section, index) => `
+                        <div class="section-card">
+                            <span class="section-number">${index + 1}</span>
+                            <div>
+                                <strong>${section.title}</strong>
+                                <small>${section.description}</small>
+                            </div>
+                        </div>
+                    `,
+                ).join("")}
+            </div>
+            <p class="test-note">Cada sección dispone de 2 minutos.</p>
+            <button id="start">Comenzar evaluación</button>
         </main>
     `;
 
@@ -65,30 +133,50 @@ function renderStartScreen() {
         .addEventListener("click", startTest);
 }
 
-function renderQuestionLoop() {
-    const questionIndex = questionOrder[currentQuestion];
-    const question = questions[questionIndex];
+function renderSectionIntro() {
+    const section = currentSection();
+    app.innerHTML = `
+        <main class="test section-intro">
+            <h1>${section.title}</h1>
+            <p>${section.description}</p>
+            <p class="test-note">Tienes 2 minutos para completar esta sección.</p>
+            <button id="start-section">
+                ${sectionIndex === 0 ? "Comenzar" : "Continuar"}
+            </button>
+        </main>
+    `;
+
+    app.querySelector<HTMLButtonElement>("#start-section")!
+        .addEventListener("click", startSection);
+}
+
+function renderQuestion() {
+    const questions = currentQuestions();
+    const question = questions[questionOrder[currentQuestion]];
+    const section = currentSection();
+    const statementClass = section.id === "perceptual-speed"
+        ? "question-statement perceptual-statement"
+        : section.id === "number-speed"
+            ? "question-statement numeric-statement"
+            : "question-statement";
 
     questionStartTime = performance.now();
     app.innerHTML = `
-        <main class="test">
-            <p class="progress">
-                Pregunta ${currentQuestion + 1} de ${questions.length}
-            </p>
+        <main class="test ${section.id}-test">
             <p id="timer">Tiempo restante: 02:00</p>
-            <h1>${question.statement}</h1>
+            <div class="${statementClass}">${question.statement.replace(/\n/g, "<br>")}</div>
             <div class="options">
                 ${question.options.map(
                     (option, index) => `
                         <button class="option" data-index="${index}">
-                            ${option}
+                            ${String(option)}
                         </button>
                     `,
                 ).join("")}
             </div>
             <button id="next" disabled>
                 ${currentQuestion === questions.length - 1
-                    ? "Ver resultado"
+                    ? "Continuar"
                     : "Siguiente pregunta"}
             </button>
         </main>
@@ -99,33 +187,39 @@ function renderQuestionLoop() {
             if (testFinished || answered) return;
 
             pauseTimer();
-
             if (remainingTime <= 0) {
-                finishTest();
+                finishSection();
                 return;
             }
 
-            const elapsed = performance.now() - questionStartTime;
-            responseTimes[questionIndex] = elapsed;
-
+            const questionIndex = questionOrder[currentQuestion];
+            const selected = Number(button.dataset.index);
+            const isCorrect = selected === question.answer;
+            questionResults.set(
+                `${section.id}-${questionIndex}`,
+                {
+                    id: questionIndex + 1,
+                    section: section.title,
+                    correct: isCorrect,
+                    timeMs: Math.round(performance.now() - questionStartTime),
+                },
+            );
             answered = true;
 
-            const selected = Number(button.dataset.index);
-
-            if (selected === question.answer) {
+            if (isCorrect) {
                 score++;
                 button.classList.add("correct");
             } else {
                 button.classList.add("incorrect");
-                app
-                    .querySelector(`[data-index="${question.answer}"]`)
+                app.querySelector(`[data-index="${question.answer}"]`)
                     ?.classList.add("correct");
             }
 
-            app.querySelectorAll<HTMLButtonElement>(".option").forEach((option) => {
-                option.disabled = true;
-            });
-
+            app.querySelectorAll<HTMLButtonElement>(".option").forEach(
+                (option) => {
+                    option.disabled = true;
+                },
+            );
             app.querySelector<HTMLButtonElement>("#next")!.disabled = false;
         });
     });
@@ -134,21 +228,18 @@ function renderQuestionLoop() {
         "click",
         () => {
             if (testFinished || !answered) return;
-
             if (remainingTime <= 0) {
-                finishTest();
+                finishSection();
                 return;
             }
 
             currentQuestion++;
-
             if (currentQuestion < questions.length) {
                 answered = false;
-                renderQuestionLoop();
+                renderQuestion();
                 resumeTimer();
-                updateTimer();
             } else {
-                finishTest();
+                finishSection();
             }
         },
     );
@@ -156,22 +247,19 @@ function renderQuestionLoop() {
 
 function updateTimer() {
     if (testFinished) return;
-    const elapsed = performance.now() - questionActiveSince;
+
+    const elapsed = performance.now() - sectionActiveSince;
     const remaining = Math.max(
         0,
-        Math.ceil((remainingTime  - elapsed) / 1000),
+        Math.ceil((remainingTime - elapsed) / 1000),
     );
-    const minutes = Math.floor(remaining / 60);
-    const seconds = remaining % 60;
     const timer = app.querySelector<HTMLParagraphElement>("#timer");
     if (timer) {
         timer.textContent =
-            `Tiempo restante: ${String(minutes).padStart(2, "0")}:` +
-            `${String(seconds).padStart(2, "0")}`;
+            `Tiempo restante: ${String(Math.floor(remaining / 60)).padStart(2, "0")}:` +
+            `${String(remaining % 60).padStart(2, "0")}`;
     }
-    if (remaining === 0) {
-        finishTest();
-    }
+    if (remaining === 0) finishSection();
 }
 
 function pauseTimer() {
@@ -179,81 +267,114 @@ function pauseTimer() {
         clearInterval(timerInterval);
         timerInterval = undefined;
     }
-    remainingTime -= performance.now() - questionActiveSince;
-    remainingTime = Math.max(0, remainingTime);
+    remainingTime = Math.max(
+        0,
+        remainingTime - (performance.now() - sectionActiveSince),
+    );
 }
 
 function resumeTimer() {
-    questionActiveSince = performance.now();
+    sectionActiveSince = performance.now();
     timerInterval = window.setInterval(updateTimer, 250);
     updateTimer();
+}
+
+function startTest() {
+    sectionIndex = 0;
+    sectionScores.length = 0;
+    questionResults.clear();
+    testFinished = false;
+    renderSectionIntro();
+}
+
+function startSection() {
+    currentQuestion = 0;
+    score = 0;
+    answered = false;
+    questionOrder = shuffleIndices(currentQuestions().length);
+    remainingTime = SECTION_DURATION * 1000;
+    renderQuestion();
+    resumeTimer();
+}
+
+function finishSection() {
+    if (timerInterval !== undefined) {
+        clearInterval(timerInterval);
+        timerInterval = undefined;
+    }
+    sectionScores[sectionIndex] = score;
+
+    if (sectionIndex < sections.length - 1) {
+        sectionIndex++;
+        renderSectionIntro();
+        return;
+    }
+
+    finishTest();
 }
 
 function finishTest() {
     if (testFinished) return;
-
     testFinished = true;
 
-    if (timerInterval !== undefined) {
-        clearInterval(timerInterval);
-        timerInterval = undefined;
-    }
-
-    const answeredCount = responseTimes.filter(
-        (time) => time !== undefined,
-    ).length;
+    const totalScore = sectionScores.reduce(
+        (total, sectionScore) => total + sectionScore,
+        0,
+    );
+    const totalQuestions = sections.reduce(
+        (total, section) => total + section.questions.length,
+        0,
+    );
+    const results = sections.flatMap((section) =>
+        section.questions.map((_, index) =>
+            questionResults.get(`${section.id}-${index}`) ?? {
+                id: index + 1,
+                section: section.title,
+                correct: false,
+                timeMs: null,
+            },
+        ),
+    );
 
     app.innerHTML = `
-        <main class="test">
-            <h1>Test finalizado</h1>
-
-            <p>Respuestas correctas: ${score}</p>
-            <p>Preguntas respondidas: ${answeredCount} de ${questions.length}</p>
-            <p>Preguntas sin responder: ${questions.length - answeredCount}</p>
-
-            <h2>Tiempo por pregunta</h2>
-
-            <ul>
-                ${responseTimes
-                    .map(
-                        (time, index) => `
-                            <li>
-                                Pregunta ${index + 1}: ${(time / 1000).toFixed(2)} s
-                            </li>
-                        `,
-                    )
-                    .join("")}
-            </ul>
-
+        <main class="test results">
+            <p class="eyebrow">Evaluación completada</p>
+            <h1>Resultados</h1>
+            <p class="final-score">${totalScore} <span>/ ${totalQuestions}</span></p>
+            <div class="results-list">
+                ${sections.map(
+                    (section, index) => `
+                        <div class="result-row">
+                            <span>${section.title}</span>
+                            <strong>${sectionScores[index]} / ${section.questions.length}</strong>
+                        </div>
+                    `,
+                ).join("")}
+            </div>
+            <button id="download-results">Descargar resultados</button>
             <button id="restart">Volver a empezar</button>
         </main>
     `;
 
-    app.querySelector<HTMLButtonElement>("#restart")!.addEventListener(
-        "click",
-        renderStartScreen
-    );
+    app.querySelector<HTMLButtonElement>("#download-results")!
+        .addEventListener("click", () => downloadResults(results));
+    app.querySelector<HTMLButtonElement>("#restart")!
+        .addEventListener("click", renderStartScreen);
 }
 
-function startTest() {
-    if (timerInterval !== undefined) {
-        clearInterval(timerInterval);
-        timerInterval = undefined;
-    }
-
-    answered = false;
-    currentQuestion = 0;
-    questionOrder = shuffleIndices(questions.length);
-    remainingTime = TEST_DURATION * 1000;
-    responseTimes.length = 0;
-    score = 0;
-    testFinished = false;
-
-    renderQuestionLoop();
-    updateTimer();
-
-    timerInterval = window.setInterval(updateTimer, 250);
-
+function downloadResults(results: QuestionResult[]) {
+    const file = new Blob(
+        [JSON.stringify(results, null, 2)],
+        { type: "application/json" },
+    );
+    const url = URL.createObjectURL(file);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "resultados-test-aptitud.json";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 0);
 }
 
 renderStartScreen();
