@@ -13,6 +13,18 @@ La evaluación está dividida en cuatro secciones:
 
 Las preguntas aparecen en un orden diferente cada vez que se inicia una evaluación. Cada sección tiene su propio tiempo límite.
 
+## Ejemplos de preguntas
+
+Estas capturas muestran cómo se presentan las preguntas durante la evaluación:
+
+### Pregunta de razonamiento
+
+![Ejemplo de una pregunta de razonamiento con opciones de respuesta](assets/screenshot01.png)
+
+### Pregunta de rapidez numérica
+
+![Ejemplo de una pregunta de rapidez numérica con opciones de respuesta](assets/screenshot02.png)
+
 ## Cómo realizar la evaluación
 
 1. Inicia la aplicación.
