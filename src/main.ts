@@ -9,7 +9,7 @@ type Question = {
 
 const questions: Question[] = questionsData;
 
-// Validar las preguntas antes de iniciar el test.
+// Validar las preguntas antes de iniciar el test
 for (const [index, question] of questions.entries()) {
     if (
         !Array.isArray(question.options) ||
@@ -29,17 +29,17 @@ if (questions.length === 0) {
     throw new Error("El test debe contener al menos una pregunta.");
 }
 
-
-let currentQuestion = 0;
-let score = 0;
-let answered = false;
-let questionStartTime = 0;
-const responseTimes: number[] = [];
 const TEST_DURATION = 30;
-let timerInterval: number | undefined;
-let deadline = 0;
-let testFinished = false;
+const responseTimes: number[] = [];
+let answered = false;
+let currentQuestion = 0;
+let questionActiveSince = 0;
 let questionOrder: number [] = [];
+let questionStartTime = 0;
+let remainingTime = 0;
+let score = 0;
+let testFinished = false;
+let timerInterval: number | undefined;
 
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
@@ -52,22 +52,31 @@ function shuffleIndices(length: number): number[] {
     return indices;
 }
 
+function renderStartScreen() {
+    app.innerHTML = `
+        <main class="test start-screen">
+            <h1>Test de aptitud</h1>
+            <p>Dispones de 2 minutos para responder las preguntas.</p>
+            <button id="start">Ok</button>
+        </main>
+    `;
+
+    app.querySelector<HTMLButtonElement>("#start")!
+        .addEventListener("click", startTest);
+}
+
 function renderQuestionLoop() {
     const questionIndex = questionOrder[currentQuestion];
     const question = questions[questionIndex];
 
     questionStartTime = performance.now();
-
     app.innerHTML = `
         <main class="test">
             <p class="progress">
                 Pregunta ${currentQuestion + 1} de ${questions.length}
             </p>
-
             <p id="timer">Tiempo restante: 02:00</p>
-
             <h1>${question.statement}</h1>
-
             <div class="options">
                 ${question.options.map(
                     (option, index) => `
@@ -77,7 +86,6 @@ function renderQuestionLoop() {
                     `,
                 ).join("")}
             </div>
-
             <button id="next" disabled>
                 ${currentQuestion === questions.length - 1
                     ? "Ver resultado"
@@ -90,7 +98,9 @@ function renderQuestionLoop() {
         button.addEventListener("click", () => {
             if (testFinished || answered) return;
 
-            if (performance.now() >= deadline) {
+            pauseTimer();
+
+            if (remainingTime <= 0) {
                 finishTest();
                 return;
             }
@@ -107,7 +117,6 @@ function renderQuestionLoop() {
                 button.classList.add("correct");
             } else {
                 button.classList.add("incorrect");
-
                 app
                     .querySelector(`[data-index="${question.answer}"]`)
                     ?.classList.add("correct");
@@ -126,7 +135,7 @@ function renderQuestionLoop() {
         () => {
             if (testFinished || !answered) return;
 
-            if (performance.now() >= deadline) {
+            if (remainingTime <= 0) {
                 finishTest();
                 return;
             }
@@ -136,6 +145,7 @@ function renderQuestionLoop() {
             if (currentQuestion < questions.length) {
                 answered = false;
                 renderQuestionLoop();
+                resumeTimer();
                 updateTimer();
             } else {
                 finishTest();
@@ -146,26 +156,37 @@ function renderQuestionLoop() {
 
 function updateTimer() {
     if (testFinished) return;
-
+    const elapsed = performance.now() - questionActiveSince;
     const remaining = Math.max(
         0,
-        Math.ceil((deadline - performance.now()) / 1000),
+        Math.ceil((remainingTime  - elapsed) / 1000),
     );
-
     const minutes = Math.floor(remaining / 60);
     const seconds = remaining % 60;
-
     const timer = app.querySelector<HTMLParagraphElement>("#timer");
-
     if (timer) {
         timer.textContent =
             `Tiempo restante: ${String(minutes).padStart(2, "0")}:` +
             `${String(seconds).padStart(2, "0")}`;
     }
-
     if (remaining === 0) {
         finishTest();
     }
+}
+
+function pauseTimer() {
+    if (timerInterval !== undefined) {
+        clearInterval(timerInterval);
+        timerInterval = undefined;
+    }
+    remainingTime -= performance.now() - questionActiveSince;
+    remainingTime = Math.max(0, remainingTime);
+}
+
+function resumeTimer() {
+    questionActiveSince = performance.now();
+    timerInterval = window.setInterval(updateTimer, 250);
+    updateTimer();
 }
 
 function finishTest() {
@@ -210,7 +231,7 @@ function finishTest() {
 
     app.querySelector<HTMLButtonElement>("#restart")!.addEventListener(
         "click",
-        startTest,
+        renderStartScreen
     );
 }
 
@@ -220,14 +241,13 @@ function startTest() {
         timerInterval = undefined;
     }
 
-    currentQuestion = 0;
-    score = 0;
     answered = false;
-    responseTimes.length = 0;
-    testFinished = false;
+    currentQuestion = 0;
     questionOrder = shuffleIndices(questions.length);
-
-    deadline = performance.now() + TEST_DURATION * 1000;
+    remainingTime = TEST_DURATION * 1000;
+    responseTimes.length = 0;
+    score = 0;
+    testFinished = false;
 
     renderQuestionLoop();
     updateTimer();
@@ -236,4 +256,4 @@ function startTest() {
 
 }
 
-startTest();
+renderStartScreen();
