@@ -72,7 +72,7 @@ for (const section of sections) {
     }
 }
 
-const SECTION_DURATION = 10;
+const SECTION_DURATION = 60;
 const questionResults = new Map<string, QuestionResult>();
 const sectionScores: number[] = [];
 let sectionIndex = 0;
