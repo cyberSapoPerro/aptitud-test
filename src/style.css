@@ -1,7 +1,19 @@
 :root {
+  --gb-bg: #282828;
+  --gb-bg-soft: #32302f;
+  --gb-bg-card: #3c3836;
+  --gb-bg-hover: #504945;
+  --gb-fg: #ebdbb2;
+  --gb-fg-muted: #a89984;
+  --gb-yellow: #fabd2f;
+  --gb-orange: #fe8019;
+  --gb-green: #b8bb26;
+  --gb-red: #fb4934;
+  --gb-blue: #83a598;
+  --gb-aqua: #8ec07c;
   font-family: system-ui, sans-serif;
-  color: #202124;
-  background: #f5f5f5;
+  color: var(--gb-fg);
+  background: var(--gb-bg);
 }
 
 body {
@@ -9,15 +21,19 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  background:
+    radial-gradient(circle at top, #3c383655, transparent 45%),
+    var(--gb-bg);
 }
 
 .test {
   box-sizing: border-box;
   width: min(600px, 92vw);
   padding: 2rem;
-  background: white;
+  background: var(--gb-bg-soft);
   border-radius: 12px;
-  box-shadow: 0 4px 20px #0000000d;
+  border: 1px solid var(--gb-bg-card);
+  box-shadow: 0 12px 32px #1d202155;
 }
 
 .start-screen,
@@ -31,9 +47,42 @@ body {
   padding-block: 4rem;
 }
 
+.section-intro {
+  text-align: left;
+}
+
+.section-intro h1,
+.section-intro > p {
+  text-align: center;
+}
+
+.section-instructions {
+  margin: 2rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--gb-bg-hover);
+  border-radius: 10px;
+  background: var(--gb-bg-card);
+}
+
+.section-instructions h2 {
+  margin: 0 0 0.75rem;
+  color: var(--gb-yellow);
+  font-size: 1rem;
+}
+
+.section-instructions ol {
+  margin: 0;
+  padding-left: 1.4rem;
+  color: var(--gb-fg);
+}
+
+.section-instructions li + li {
+  margin-top: 0.65rem;
+}
+
 .eyebrow {
   margin: 0 0 0.5rem;
-  color: #666;
+  color: var(--gb-orange);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -46,7 +95,7 @@ body {
 
 .start-screen p,
 .section-intro p {
-  color: #666;
+  color: var(--gb-fg-muted);
 }
 
 .section-overview {
@@ -61,8 +110,9 @@ body {
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem;
-  border: 1px solid #eee;
+  border: 1px solid var(--gb-bg-card);
   border-radius: 8px;
+  background: var(--gb-bg-card);
 }
 
 .section-number {
@@ -72,8 +122,8 @@ body {
   flex: 0 0 2rem;
   place-items: center;
   border-radius: 50%;
-  background: #202124;
-  color: white;
+  background: var(--gb-yellow);
+  color: var(--gb-bg);
   font-weight: 700;
 }
 
@@ -84,7 +134,54 @@ body {
 
 .section-card small,
 .test-note {
-  color: #666;
+  color: var(--gb-fg-muted);
+}
+
+.start-actions {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.secondary-button {
+  background: transparent;
+  color: var(--gb-yellow);
+}
+
+.secondary-button:hover {
+  background: var(--gb-bg-hover);
+  border-color: var(--gb-yellow);
+}
+
+.test-options {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--gb-bg-hover);
+  border-radius: 8px;
+  background: var(--gb-bg-card);
+  text-align: left;
+}
+
+.test-options label {
+  color: var(--gb-fg-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.test-options select {
+  padding: 0.75rem;
+  border: 1px solid var(--gb-bg-hover);
+  border-radius: 6px;
+  background: var(--gb-bg-soft);
+  color: var(--gb-fg);
+  font: inherit;
+}
+
+.test-options select:focus-visible {
+  outline: 2px solid var(--gb-yellow);
+  outline-offset: 2px;
 }
 
 .question-statement {
@@ -100,8 +197,10 @@ body {
   place-items: center;
   min-height: 8rem;
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 1px solid var(--gb-bg-hover);
   border-radius: 8px;
+  background: var(--gb-bg-card);
+  color: var(--gb-aqua);
   font-family: ui-monospace, monospace;
   font-size: 2rem;
   text-align: center;
@@ -130,11 +229,13 @@ body {
 
 button {
   padding: 0.9rem 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--gb-bg-hover);
   border-radius: 8px;
-  background: white;
+  background: var(--gb-bg-card);
+  color: var(--gb-fg);
   font: inherit;
   cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease, transform 150ms ease;
 }
 
 button:disabled {
@@ -143,17 +244,25 @@ button:disabled {
 }
 
 button.option:hover:not(:disabled) {
-  background: #f0f0f0;
+  background: var(--gb-bg-hover);
+  border-color: var(--gb-blue);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--gb-yellow);
+  outline-offset: 2px;
 }
 
 button.correct {
-  background: #d9f5df;
-  border-color: #25833a;
+  background: #98971a;
+  border-color: var(--gb-green);
+  color: var(--gb-bg);
 }
 
 button.incorrect {
-  background: #ffe0e0;
-  border-color: #c62828;
+  background: #9d0006;
+  border-color: var(--gb-red);
+  color: var(--gb-fg);
 }
 
 #next,
@@ -162,8 +271,19 @@ button.incorrect {
 #start-section,
 #download-results {
   width: 100%;
-  background: #202124;
-  color: white;
+  background: var(--gb-yellow);
+  border-color: var(--gb-yellow);
+  color: var(--gb-bg);
+  font-weight: 700;
+}
+
+#next:hover:not(:disabled),
+#restart:hover:not(:disabled),
+#start:hover:not(:disabled),
+#start-section:hover:not(:disabled),
+#download-results:hover:not(:disabled) {
+  background: var(--gb-orange);
+  border-color: var(--gb-orange);
 }
 
 #download-results {
@@ -177,7 +297,7 @@ button.incorrect {
 }
 
 .final-score span {
-  color: #666;
+  color: var(--gb-fg-muted);
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -198,7 +318,7 @@ button.incorrect {
 
 .stats-heading p {
   margin: 0.35rem 0 0;
-  color: #666;
+  color: var(--gb-fg-muted);
   font-size: 0.9rem;
 }
 
@@ -209,14 +329,14 @@ button.incorrect {
 
 .stats-card {
   padding: 1rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--gb-bg-hover);
   border-radius: 10px;
-  background: linear-gradient(135deg, #fafafa, #f5f7fb);
+  background: linear-gradient(135deg, var(--gb-bg-card), var(--gb-bg-soft));
 }
 
 .stats-card h3 {
   margin: 0 0 0.8rem;
-  color: #202124;
+  color: var(--gb-yellow);
   font-size: 1rem;
 }
 
@@ -226,7 +346,7 @@ button.incorrect {
   justify-content: space-between;
   gap: 1rem;
   padding-top: 0.65rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--gb-bg-hover);
 }
 
 .stat + .stat {
@@ -234,12 +354,12 @@ button.incorrect {
 }
 
 .stat span {
-  color: #666;
+  color: var(--gb-fg-muted);
   font-size: 0.85rem;
 }
 
 .stat strong {
-  color: #202124;
+  color: var(--gb-aqua);
   font-size: 1.05rem;
   white-space: nowrap;
 }
@@ -253,7 +373,7 @@ button.incorrect {
   display: flex;
   justify-content: space-between;
   padding: 0.85rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--gb-bg-hover);
 }
 
 @media (min-width: 560px) {

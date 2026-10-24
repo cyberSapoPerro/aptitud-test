@@ -14,6 +14,7 @@ type TestSection = {
     id: "reasoning" | "number-speed" | "perceptual-speed" | "word-meaning";
     title: string;
     description: string;
+    instructions: string[];
     questions: Question[];
 };
 
@@ -35,24 +36,44 @@ const sections: TestSection[] = [
         id: "reasoning",
         title: "Razonamiento",
         description: "Relaciones lógicas y comparaciones.",
+        instructions: [
+            "Lee la comparación entre las dos personas.",
+            "Identifica quién cumple mejor la relación que se pregunta.",
+            "Selecciona una respuesta y comprueba el resultado antes de continuar.",
+        ],
         questions: reasoningQuestions,
     },
     {
         id: "number-speed",
         title: "Rapidez numérica",
         description: "Identificación rápida de números.",
+        instructions: [
+            "Observa la serie de números que aparece en pantalla.",
+            "Busca en las opciones el número que aparece en la serie.",
+            "Responde con rapidez, pero verifica la serie antes de seleccionar.",
+        ],
         questions: numberSpeedQuestions,
     },
     {
         id: "perceptual-speed",
         title: "Rapidez perceptiva",
         description: "Comparación visual de caracteres.",
+        instructions: [
+            "Compara las dos filas de letras y caracteres.",
+            "Localiza la posición en la que los caracteres no coinciden.",
+            "Selecciona el número de la posición diferente.",
+        ],
         questions: perceptualSpeedQuestions,
     },
     {
         id: "word-meaning",
         title: "Significado de palabras",
         description: "Relaciones entre palabras y significados.",
+        instructions: [
+            "Lee las tres palabras que aparecen en cada pregunta.",
+            "Encuentra la palabra que no pertenece al mismo grupo de significado.",
+            "Selecciona la opción diferente para continuar.",
+        ],
         questions: wordMeaningQuestions,
     },
 ];
@@ -78,10 +99,13 @@ for (const section of sections) {
     }
 }
 
-const SECTION_DURATION: number = 120;
-const sectionDurationLabel = SECTION_DURATION === 120
-    ? "2 minutos"
-    : `${SECTION_DURATION} segundos`;
+const SECTION_DURATION_OPTIONS = [
+    { seconds: 30, label: "30 segundos" },
+    { seconds: 60, label: "1 minuto" },
+    { seconds: 120, label: "2 minutos" },
+    { seconds: 300, label: "5 minutos" },
+] as const;
+let sectionDuration = 120;
 const questionResults = new Map<string, QuestionResult>();
 const sectionElapsedTimes = new Map<string, number>();
 const sectionScores: number[] = [];
@@ -106,6 +130,17 @@ function currentQuestions(): Question[] {
     return currentSection().questions;
 }
 
+function sectionDurationLabel(): string {
+    return SECTION_DURATION_OPTIONS.find(
+        (option) => option.seconds === sectionDuration,
+    )?.label ?? `${sectionDuration} segundos`;
+}
+
+function formatTime(seconds: number): string {
+    return `${String(Math.floor(seconds / 60)).padStart(2, "0")}:` +
+        `${String(seconds % 60).padStart(2, "0")}`;
+}
+
 function shuffleIndices(length: number): number[] {
     const indices = Array.from({ length }, (_, index) => index);
     for (let i = indices.length - 1; i > 0; i--) {
@@ -119,6 +154,20 @@ function renderStartScreen() {
     app.innerHTML = `
         <main class="test start-screen">
             <p class="eyebrow">Evaluación de aptitud</p>
+            <div id="test-options" class="test-options">
+                <label for="section-duration">Tiempo por sección</label>
+                <select id="section-duration">
+                    ${SECTION_DURATION_OPTIONS.map(
+                        (option) => `
+                            <option value="${option.seconds}"${
+                                option.seconds === sectionDuration ? " selected" : ""
+                            }>
+                                ${option.label}
+                            </option>
+                        `,
+                    ).join("")}
+                </select>
+            </div>
             <h1>Test de aptitud</h1>
             <p>Completarás cuatro secciones, una por cada tipo de pregunta.</p>
             <div class="section-overview">
@@ -134,13 +183,26 @@ function renderStartScreen() {
                     `,
                 ).join("")}
             </div>
-            <p class="test-note">Cada sección dispone de ${sectionDurationLabel}.</p>
-            <button id="start">Comenzar evaluación</button>
+            <p id="duration-note" class="test-note">
+                Cada sección dispone de ${sectionDurationLabel()}.
+            </p>
+            <div class="start-actions">
+                <button id="start">Comenzar evaluación</button>
+            </div>
         </main>
     `;
 
     app.querySelector<HTMLButtonElement>("#start")!
         .addEventListener("click", startTest);
+    app.querySelector<HTMLSelectElement>("#section-duration")!
+        .addEventListener("change", (event) => {
+            const value = Number((event.target as HTMLSelectElement).value);
+            if (SECTION_DURATION_OPTIONS.some((option) => option.seconds === value)) {
+                sectionDuration = value;
+                app.querySelector<HTMLParagraphElement>("#duration-note")!
+                    .textContent = `Cada sección dispone de ${sectionDurationLabel()}.`;
+            }
+        });
 }
 
 function renderSectionIntro() {
@@ -149,7 +211,15 @@ function renderSectionIntro() {
         <main class="test section-intro">
             <h1>${section.title}</h1>
             <p>${section.description}</p>
-            <p class="test-note">Tienes ${sectionDurationLabel} para completar esta sección.</p>
+            <section class="section-instructions" aria-labelledby="instructions-title">
+                <h2 id="instructions-title">Cómo responder</h2>
+                <ol>
+                    ${section.instructions.map(
+                        (instruction) => `<li>${instruction}</li>`,
+                    ).join("")}
+                </ol>
+            </section>
+            <p class="test-note">Tienes ${sectionDurationLabel()} para completar esta sección.</p>
             <button id="start-section">
                 ${sectionIndex === 0 ? "Comenzar" : "Continuar"}
             </button>
@@ -173,7 +243,7 @@ function renderQuestion() {
     questionStartTime = performance.now();
     app.innerHTML = `
         <main class="test ${section.id}-test">
-            <p id="timer">Tiempo restante: 02:00</p>
+            <p id="timer">Tiempo restante: ${formatTime(sectionDuration)}</p>
             <div class="${statementClass}">${question.statement.replace(/\n/g, "<br>")}</div>
             <div class="options">
                 ${question.options.map(
@@ -306,7 +376,7 @@ function startSection() {
     score = 0;
     answered = false;
     questionOrder = shuffleIndices(currentQuestions().length);
-    remainingTime = SECTION_DURATION * 1000;
+    remainingTime = sectionDuration * 1000;
     renderQuestion();
     resumeTimer();
 }
@@ -318,7 +388,7 @@ function finishSection() {
     }
     sectionElapsedTimes.set(
         currentSection().id,
-        SECTION_DURATION * 1000 - remainingTime,
+        sectionDuration * 1000 - remainingTime,
     );
     sectionScores[sectionIndex] = score;
 

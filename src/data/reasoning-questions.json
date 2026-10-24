@@ -1,502 +1,802 @@
 [
   {
-    "statement": "Tom es más pesado que Fred. ¿Quién es más pesado?",
-    "options": ["Tom", "Fred"],
-    "answer": 0
-  },
-  {
-    "statement": "Juan es más inteligente que Diego. ¿Quién es más tonto?",
-    "options": ["Juan", "Diego"],
+    "statement": "Tom es más pesado que Fred. ¿Quién es más ligero?",
+    "options": [
+      "Tom",
+      "Fred"
+    ],
     "answer": 1
   },
   {
-    "statement": "Wendy no es tan fuerte como Rachel. ¿Quién es más débil?",
-    "options": ["Wendy", "Rachel"],
+    "statement": "Tom es menos pesado que Fred. ¿Quién es más ligero?",
+    "options": [
+      "Tom",
+      "Fred"
+    ],
     "answer": 0
   },
   {
+    "statement": "Tom es más pesado que Fred. ¿Quién es más liviano?",
+    "options": [
+      "Tom",
+      "Fred"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Tom es menos pesado que Fred. ¿Quién es más liviano?",
+    "options": [
+      "Tom",
+      "Fred"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Juan es más inteligente que Diego. ¿Quién es más tonto?",
+    "options": [
+      "Juan",
+      "Diego"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Juan es menos inteligente que Diego. ¿Quién es más tonto?",
+    "options": [
+      "Juan",
+      "Diego"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Juan es más inteligente que Diego. ¿Quién es más listo?",
+    "options": [
+      "Juan",
+      "Diego"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Juan es menos inteligente que Diego. ¿Quién es más listo?",
+    "options": [
+      "Juan",
+      "Diego"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Wendy es más fuerte que Rachel. ¿Quién es más débil?",
+    "options": [
+      "Wendy",
+      "Rachel"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Wendy es menos fuerte que Rachel. ¿Quién es más débil?",
+    "options": [
+      "Wendy",
+      "Rachel"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Wendy es más fuerte que Rachel. ¿Quién es más robusta?",
+    "options": [
+      "Wendy",
+      "Rachel"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Wendy es menos fuerte que Rachel. ¿Quién es más robusta?",
+    "options": [
+      "Wendy",
+      "Rachel"
+    ],
+    "answer": 1
+  },
+  {
     "statement": "Ana es más alta que Marta. ¿Quién es más baja?",
-    "options": ["Ana", "Marta"],
+    "options": [
+      "Ana",
+      "Marta"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Ana es menos alta que Marta. ¿Quién es más baja?",
+    "options": [
+      "Ana",
+      "Marta"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Ana es más alta que Marta. ¿Quién es más elevada?",
+    "options": [
+      "Ana",
+      "Marta"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Ana es menos alta que Marta. ¿Quién es más elevada?",
+    "options": [
+      "Ana",
+      "Marta"
+    ],
     "answer": 1
   },
   {
     "statement": "Luis es más rápido que Pablo. ¿Quién es más lento?",
-    "options": ["Luis", "Pablo"],
+    "options": [
+      "Luis",
+      "Pablo"
+    ],
     "answer": 1
   },
   {
-    "statement": "Sofía es más joven que Elena. ¿Quién es mayor?",
-    "options": ["Sofía", "Elena"],
+    "statement": "Luis es menos rápido que Pablo. ¿Quién es más lento?",
+    "options": [
+      "Luis",
+      "Pablo"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Luis es más rápido que Pablo. ¿Quién es más veloz?",
+    "options": [
+      "Luis",
+      "Pablo"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Luis es menos rápido que Pablo. ¿Quién es más veloz?",
+    "options": [
+      "Luis",
+      "Pablo"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Sofía es más joven que Elena. ¿Quién es más mayor?",
+    "options": [
+      "Sofía",
+      "Elena"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Sofía es menos joven que Elena. ¿Quién es más mayor?",
+    "options": [
+      "Sofía",
+      "Elena"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Sofía es más joven que Elena. ¿Quién es más juvenil?",
+    "options": [
+      "Sofía",
+      "Elena"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Sofía es menos joven que Elena. ¿Quién es más juvenil?",
+    "options": [
+      "Sofía",
+      "Elena"
+    ],
     "answer": 1
   },
   {
     "statement": "Carlos es más bajo que Andrés. ¿Quién es más alto?",
-    "options": ["Carlos", "Andrés"],
+    "options": [
+      "Carlos",
+      "Andrés"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Carlos es menos bajo que Andrés. ¿Quién es más alto?",
+    "options": [
+      "Carlos",
+      "Andrés"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Carlos es más bajo que Andrés. ¿Quién es más pequeño?",
+    "options": [
+      "Carlos",
+      "Andrés"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Carlos es menos bajo que Andrés. ¿Quién es más pequeño?",
+    "options": [
+      "Carlos",
+      "Andrés"
+    ],
     "answer": 1
   },
   {
     "statement": "Lucía es más ordenada que Paula. ¿Quién es más desordenada?",
-    "options": ["Lucía", "Paula"],
+    "options": [
+      "Lucía",
+      "Paula"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Lucía es menos ordenada que Paula. ¿Quién es más desordenada?",
+    "options": [
+      "Lucía",
+      "Paula"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Lucía es más ordenada que Paula. ¿Quién es más organizada?",
+    "options": [
+      "Lucía",
+      "Paula"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Lucía es menos ordenada que Paula. ¿Quién es más organizada?",
+    "options": [
+      "Lucía",
+      "Paula"
+    ],
     "answer": 1
   },
   {
     "statement": "Diego es más frío que Marcos. ¿Quién es más cálido?",
-    "options": ["Diego", "Marcos"],
+    "options": [
+      "Diego",
+      "Marcos"
+    ],
     "answer": 1
   },
   {
-    "statement": "Laura es más amable que Rosa. ¿Quién es menos amable?",
-    "options": ["Laura", "Rosa"],
+    "statement": "Diego es menos frío que Marcos. ¿Quién es más cálido?",
+    "options": [
+      "Diego",
+      "Marcos"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Diego es más frío que Marcos. ¿Quién es más gélido?",
+    "options": [
+      "Diego",
+      "Marcos"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Diego es menos frío que Marcos. ¿Quién es más gélido?",
+    "options": [
+      "Diego",
+      "Marcos"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Laura es más amable que Rosa. ¿Quién es más brusco?",
+    "options": [
+      "Laura",
+      "Rosa"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Laura es menos amable que Rosa. ¿Quién es más brusco?",
+    "options": [
+      "Laura",
+      "Rosa"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Laura es más amable que Rosa. ¿Quién es más cordial?",
+    "options": [
+      "Laura",
+      "Rosa"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Laura es menos amable que Rosa. ¿Quién es más cordial?",
+    "options": [
+      "Laura",
+      "Rosa"
+    ],
     "answer": 1
   },
   {
     "statement": "Pedro es más ancho que Iván. ¿Quién es más estrecho?",
-    "options": ["Pedro", "Iván"],
+    "options": [
+      "Pedro",
+      "Iván"
+    ],
     "answer": 1
   },
   {
-    "statement": "Mónica es más puntual que Sara. ¿Quién llega más tarde?",
-    "options": ["Mónica", "Sara"],
+    "statement": "Pedro es menos ancho que Iván. ¿Quién es más estrecho?",
+    "options": [
+      "Pedro",
+      "Iván"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Pedro es más ancho que Iván. ¿Quién es más amplio?",
+    "options": [
+      "Pedro",
+      "Iván"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Pedro es menos ancho que Iván. ¿Quién es más amplio?",
+    "options": [
+      "Pedro",
+      "Iván"
+    ],
     "answer": 1
   },
   {
-    "statement": "Jorge es más rico que Raúl. ¿Quién tiene menos dinero?",
-    "options": ["Jorge", "Raúl"],
+    "statement": "Mónica es más puntual que Sara. ¿Quién es más tardío?",
+    "options": [
+      "Mónica",
+      "Sara"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Mónica es menos puntual que Sara. ¿Quién es más tardío?",
+    "options": [
+      "Mónica",
+      "Sara"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Mónica es más puntual que Sara. ¿Quién es más oportuna?",
+    "options": [
+      "Mónica",
+      "Sara"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Mónica es menos puntual que Sara. ¿Quién es más oportuna?",
+    "options": [
+      "Mónica",
+      "Sara"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Jorge es más rico que Raúl. ¿Quién es más pobre?",
+    "options": [
+      "Jorge",
+      "Raúl"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Jorge es menos rico que Raúl. ¿Quién es más pobre?",
+    "options": [
+      "Jorge",
+      "Raúl"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Jorge es más rico que Raúl. ¿Quién es más adinerado?",
+    "options": [
+      "Jorge",
+      "Raúl"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Jorge es menos rico que Raúl. ¿Quién es más adinerado?",
+    "options": [
+      "Jorge",
+      "Raúl"
+    ],
     "answer": 1
   },
   {
     "statement": "Valeria es más delgada que Beatriz. ¿Quién es más robusta?",
-    "options": ["Valeria", "Beatriz"],
+    "options": [
+      "Valeria",
+      "Beatriz"
+    ],
     "answer": 1
   },
   {
-    "statement": "Héctor es más valiente que Óscar. ¿Quién tiene más miedo?",
-    "options": ["Héctor", "Óscar"],
+    "statement": "Valeria es menos delgada que Beatriz. ¿Quién es más robusta?",
+    "options": [
+      "Valeria",
+      "Beatriz"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Valeria es más delgada que Beatriz. ¿Quién es más esbelta?",
+    "options": [
+      "Valeria",
+      "Beatriz"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Valeria es menos delgada que Beatriz. ¿Quién es más esbelta?",
+    "options": [
+      "Valeria",
+      "Beatriz"
+    ],
     "answer": 1
   },
   {
-    "statement": "Nora es más silenciosa que Clara. ¿Quién hace más ruido?",
-    "options": ["Nora", "Clara"],
+    "statement": "Héctor es más valiente que Óscar. ¿Quién es más miedoso?",
+    "options": [
+      "Héctor",
+      "Óscar"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Héctor es menos valiente que Óscar. ¿Quién es más miedoso?",
+    "options": [
+      "Héctor",
+      "Óscar"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Héctor es más valiente que Óscar. ¿Quién es más audaz?",
+    "options": [
+      "Héctor",
+      "Óscar"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Héctor es menos valiente que Óscar. ¿Quién es más audaz?",
+    "options": [
+      "Héctor",
+      "Óscar"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Nora es más silenciosa que Clara. ¿Quién es más ruidosa?",
+    "options": [
+      "Nora",
+      "Clara"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Nora es menos silenciosa que Clara. ¿Quién es más ruidosa?",
+    "options": [
+      "Nora",
+      "Clara"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Nora es más silenciosa que Clara. ¿Quién es más callada?",
+    "options": [
+      "Nora",
+      "Clara"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Nora es menos silenciosa que Clara. ¿Quién es más callada?",
+    "options": [
+      "Nora",
+      "Clara"
+    ],
     "answer": 1
   },
   {
     "statement": "Bruno es más trabajador que Sergio. ¿Quién es más perezoso?",
-    "options": ["Bruno", "Sergio"],
+    "options": [
+      "Bruno",
+      "Sergio"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Bruno es menos trabajador que Sergio. ¿Quién es más perezoso?",
+    "options": [
+      "Bruno",
+      "Sergio"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Bruno es más trabajador que Sergio. ¿Quién es más laborioso?",
+    "options": [
+      "Bruno",
+      "Sergio"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Bruno es menos trabajador que Sergio. ¿Quién es más laborioso?",
+    "options": [
+      "Bruno",
+      "Sergio"
+    ],
     "answer": 1
   },
   {
     "statement": "Isabel es más clara que Teresa. ¿Quién es más oscura?",
-    "options": ["Isabel", "Teresa"],
+    "options": [
+      "Isabel",
+      "Teresa"
+    ],
     "answer": 1
   },
   {
-    "statement": "Ricardo es más joven que Fernando. ¿Quién es menor?",
-    "options": ["Ricardo", "Fernando"],
+    "statement": "Isabel es menos clara que Teresa. ¿Quién es más oscura?",
+    "options": [
+      "Isabel",
+      "Teresa"
+    ],
     "answer": 0
+  },
+  {
+    "statement": "Isabel es más clara que Teresa. ¿Quién es más luminosa?",
+    "options": [
+      "Isabel",
+      "Teresa"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Isabel es menos clara que Teresa. ¿Quién es más luminosa?",
+    "options": [
+      "Isabel",
+      "Teresa"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Ricardo es más joven que Fernando. ¿Quién es más mayor?",
+    "options": [
+      "Ricardo",
+      "Fernando"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "Ricardo es menos joven que Fernando. ¿Quién es más mayor?",
+    "options": [
+      "Ricardo",
+      "Fernando"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Ricardo es más joven que Fernando. ¿Quién es más menor?",
+    "options": [
+      "Ricardo",
+      "Fernando"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Ricardo es menos joven que Fernando. ¿Quién es más menor?",
+    "options": [
+      "Ricardo",
+      "Fernando"
+    ],
+    "answer": 1
   },
   {
     "statement": "Gabriela es más larga que Diana. ¿Quién es más corta?",
-    "options": ["Gabriela", "Diana"],
+    "options": [
+      "Gabriela",
+      "Diana"
+    ],
     "answer": 1
   },
   {
-    "statement": "Esteban es más limpio que Ramiro. ¿Quién está más sucio?",
-    "options": ["Esteban", "Ramiro"],
-    "answer": 1
-  },
-  {
-    "statement": "Marina es más educada que Alicia. ¿Quién es menos educada?",
-    "options": ["Marina", "Alicia"],
-    "answer": 1
-  },
-  {
-    "statement": "Felipe es más pesado que Gonzalo. ¿Quién pesa menos?",
-    "options": ["Felipe", "Gonzalo"],
-    "answer": 1
-  },
-  {
-    "statement": "Patricia es más rápida que Verónica. ¿Quién necesita más tiempo?",
-    "options": ["Patricia", "Verónica"],
-    "answer": 1
-  },
-  {
-    "statement": "Alberto es más alegre que César. ¿Quién está más triste?",
-    "options": ["Alberto", "César"],
-    "answer": 1
-  },
-  {
-    "statement": "Carmen es más generosa que Julia. ¿Quién comparte menos?",
-    "options": ["Carmen", "Julia"],
-    "answer": 1
-  },
-  {
-    "statement": "Mateo es más grande que Simón. ¿Quién es más pequeño?",
-    "options": ["Mateo", "Simón"],
-    "answer": 1
-  },
-  {
-    "statement": "Adriana es más fuerte que Manuela. ¿Quién tiene menos fuerza?",
-    "options": ["Adriana", "Manuela"],
-    "answer": 1
-  },
-  {
-    "statement": "Ramón es más lento que Julián. ¿Quién es más veloz?",
-    "options": ["Ramón", "Julián"],
-    "answer": 1
-  },
-  {
-    "statement": "Silvia es más joven que Rebeca. ¿Quién tiene más edad?",
-    "options": ["Silvia", "Rebeca"],
-    "answer": 1
-  },
-  {
-    "statement": "Nicolás es más alto que Enrique. ¿Quién queda más abajo?",
-    "options": ["Nicolás", "Enrique"],
-    "answer": 1
-  },
-  {
-    "statement": "Fátima es más cuidadosa que Irene. ¿Quién comete más errores?",
-    "options": ["Fátima", "Irene"],
-    "answer": 1
-  },
-  {
-    "statement": "Roberto es más seco que Hugo. ¿Quién está más húmedo?",
-    "options": ["Roberto", "Hugo"],
-    "answer": 1
-  },
-  {
-    "statement": "Elisa es más simpática que Noelia. ¿Quién resulta menos simpática?",
-    "options": ["Elisa", "Noelia"],
-    "answer": 1
-  },
-  {
-    "statement": "Arturo es más joven que Leonel. ¿Quién es mayor?",
-    "options": ["Arturo", "Leonel"],
-    "answer": 1
-  },
-  {
-    "statement": "Bárbara es más ancha que Susana. ¿Quién es más angosta?",
-    "options": ["Bárbara", "Susana"],
-    "answer": 1
-  },
-  {
-    "statement": "Mauricio es más rico que Lorenzo. ¿Quién es más pobre?",
-    "options": ["Mauricio", "Lorenzo"],
-    "answer": 1
-  },
-  {
-    "statement": "Gloria es más tranquila que Inés. ¿Quién está más nerviosa?",
-    "options": ["Gloria", "Inés"],
-    "answer": 1
-  },
-  {
-    "statement": "Tomás es más oscuro que Abel. ¿Quién es más claro?",
-    "options": ["Tomás", "Abel"],
-    "answer": 1
-  },
-  {
-    "statement": "Lidia es más alta que Eva. ¿Quién es más baja?",
-    "options": ["Lidia", "Eva"],
-    "answer": 1
-  },
-  {
-    "statement": "Cristian es más amable que Emanuel. ¿Quién es más brusco?",
-    "options": ["Cristian", "Emanuel"],
-    "answer": 1
-  },
-  {
-    "statement": "Rocío es más delgada que Miriam. ¿Quién tiene mayor volumen?",
-    "options": ["Rocío", "Miriam"],
-    "answer": 1
-  },
-  {
-    "statement": "Fabián es más inteligente que Darío. ¿Quién tiene menor inteligencia?",
-    "options": ["Fabián", "Darío"],
-    "answer": 1
-  },
-  {
-    "statement": "Verónica es más puntual que Leticia. ¿Quién suele retrasarse?",
-    "options": ["Verónica", "Leticia"],
-    "answer": 1
-  },
-  {
-    "statement": "Samuel es más fuerte que Joel. ¿Quién es más débil?",
-    "options": ["Samuel", "Joel"],
-    "answer": 1
-  },
-  {
-    "statement": "Margarita es más limpia que Celia. ¿Quién está más sucia?",
-    "options": ["Margarita", "Celia"],
-    "answer": 1
-  },
-  {
-    "statement": "Germán es más alegre que Víctor. ¿Quién está menos contento?",
-    "options": ["Germán", "Víctor"],
-    "answer": 1
-  },
-  {
-    "statement": "Olivia es más silenciosa que Nadia. ¿Quién habla más?",
-    "options": ["Olivia", "Nadia"],
-    "answer": 1
-  },
-  {
-    "statement": "Javier es más trabajador que René. ¿Quién trabaja menos?",
-    "options": ["Javier", "René"],
-    "answer": 1
-  },
-  {
-    "statement": "Marisol es más fría que Celeste. ¿Quién está más caliente?",
-    "options": ["Marisol", "Celeste"],
-    "answer": 1
-  },
-  {
-    "statement": "Pablo es más bajo que Joaquín. ¿Quién es más alto?",
-    "options": ["Pablo", "Joaquín"],
-    "answer": 1
-  },
-  {
-    "statement": "Antonia es más generosa que Luisa. ¿Quién es más tacaña?",
-    "options": ["Antonia", "Luisa"],
-    "answer": 1
-  },
-  {
-    "statement": "Rodrigo es más pesado que Alex. ¿Quién pesa menos?",
-    "options": ["Rodrigo", "Alex"],
-    "answer": 1
-  },
-  {
-    "statement": "Claudia es más rápida que Norma. ¿Quién es más lenta?",
-    "options": ["Claudia", "Norma"],
-    "answer": 1
-  },
-  {
-    "statement": "Eduardo es más ordenado que Raúl. ¿Quién tiene más desorden?",
-    "options": ["Eduardo", "Raúl"],
-    "answer": 1
-  },
-  {
-    "statement": "Mónica es más valiente que Daniela. ¿Quién es más miedosa?",
-    "options": ["Mónica", "Daniela"],
-    "answer": 1
-  },
-  {
-    "statement": "Ignacio es más largo que César. ¿Quién es más corto?",
-    "options": ["Ignacio", "César"],
-    "answer": 1
-  },
-  {
-    "statement": "Beatriz es más educada que Sandra. ¿Quién es más maleducada?",
-    "options": ["Beatriz", "Sandra"],
-    "answer": 1
-  },
-  {
-    "statement": "Álvaro es más joven que Bruno. ¿Quién es menor?",
-    "options": ["Álvaro", "Bruno"],
+    "statement": "Gabriela es menos larga que Diana. ¿Quién es más corta?",
+    "options": [
+      "Gabriela",
+      "Diana"
+    ],
     "answer": 0
   },
   {
-    "statement": "Carolina es más clara que Marina. ¿Quién es más oscura?",
-    "options": ["Carolina", "Marina"],
+    "statement": "Gabriela es más larga que Diana. ¿Quién es más extensa?",
+    "options": [
+      "Gabriela",
+      "Diana"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Gabriela es menos larga que Diana. ¿Quién es más extensa?",
+    "options": [
+      "Gabriela",
+      "Diana"
+    ],
     "answer": 1
   },
   {
-    "statement": "Santiago es más ancho que Esteban. ¿Quién es más estrecho?",
-    "options": ["Santiago", "Esteban"],
+    "statement": "Esteban es más limpio que Ramiro. ¿Quién es más sucio?",
+    "options": [
+      "Esteban",
+      "Ramiro"
+    ],
     "answer": 1
   },
   {
-    "statement": "Lorena es más amable que Teresa. ¿Quién es menos amable?",
-    "options": ["Lorena", "Teresa"],
+    "statement": "Esteban es menos limpio que Ramiro. ¿Quién es más sucio?",
+    "options": [
+      "Esteban",
+      "Ramiro"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Esteban es más limpio que Ramiro. ¿Quién es más aseado?",
+    "options": [
+      "Esteban",
+      "Ramiro"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Esteban es menos limpio que Ramiro. ¿Quién es más aseado?",
+    "options": [
+      "Esteban",
+      "Ramiro"
+    ],
     "answer": 1
   },
   {
-    "statement": "Manuel es más frío que Adrián. ¿Quién es más cálido?",
-    "options": ["Manuel", "Adrián"],
+    "statement": "Marina es más educada que Alicia. ¿Quién es más maleducada?",
+    "options": [
+      "Marina",
+      "Alicia"
+    ],
     "answer": 1
   },
   {
-    "statement": "Josefina es más fuerte que Susana. ¿Quién tiene menos fuerza?",
-    "options": ["Josefina", "Susana"],
+    "statement": "Marina es menos educada que Alicia. ¿Quién es más maleducada?",
+    "options": [
+      "Marina",
+      "Alicia"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Marina es más educada que Alicia. ¿Quién es más respetuosa?",
+    "options": [
+      "Marina",
+      "Alicia"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Marina es menos educada que Alicia. ¿Quién es más respetuosa?",
+    "options": [
+      "Marina",
+      "Alicia"
+    ],
     "answer": 1
   },
   {
-    "statement": "Agustín es más inteligente que Marcelo. ¿Quién es menos inteligente?",
-    "options": ["Agustín", "Marcelo"],
+    "statement": "Felipe es más pesado que Gonzalo. ¿Quién es más ligero?",
+    "options": [
+      "Felipe",
+      "Gonzalo"
+    ],
     "answer": 1
   },
   {
-    "statement": "Paola es más delgada que Verónica. ¿Quién es más robusta?",
-    "options": ["Paola", "Verónica"],
+    "statement": "Felipe es menos pesado que Gonzalo. ¿Quién es más ligero?",
+    "options": [
+      "Felipe",
+      "Gonzalo"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Felipe es más pesado que Gonzalo. ¿Quién es más grueso?",
+    "options": [
+      "Felipe",
+      "Gonzalo"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Felipe es menos pesado que Gonzalo. ¿Quién es más grueso?",
+    "options": [
+      "Felipe",
+      "Gonzalo"
+    ],
     "answer": 1
   },
   {
-    "statement": "Hernán es más puntual que Diego. ¿Quién llega después?",
-    "options": ["Hernán", "Diego"],
+    "statement": "Patricia es más rápida que Verónica. ¿Quién es más lenta?",
+    "options": [
+      "Patricia",
+      "Verónica"
+    ],
     "answer": 1
   },
   {
-    "statement": "Miriam es más limpia que Gabriela. ¿Quién está más sucia?",
-    "options": ["Miriam", "Gabriela"],
+    "statement": "Patricia es menos rápida que Verónica. ¿Quién es más lenta?",
+    "options": [
+      "Patricia",
+      "Verónica"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Patricia es más rápida que Verónica. ¿Quién es más veloz?",
+    "options": [
+      "Patricia",
+      "Verónica"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "Patricia es menos rápida que Verónica. ¿Quién es más veloz?",
+    "options": [
+      "Patricia",
+      "Verónica"
+    ],
     "answer": 1
   },
   {
-    "statement": "Leonardo es más alegre que Ramiro. ¿Quién está más triste?",
-    "options": ["Leonardo", "Ramiro"],
+    "statement": "Alberto es más alegre que César. ¿Quién es más triste?",
+    "options": [
+      "Alberto",
+      "César"
+    ],
     "answer": 1
   },
   {
-    "statement": "Natalia es más silenciosa que Julia. ¿Quién hace más ruido?",
-    "options": ["Natalia", "Julia"],
-    "answer": 1
+    "statement": "Alberto es menos alegre que César. ¿Quién es más triste?",
+    "options": [
+      "Alberto",
+      "César"
+    ],
+    "answer": 0
   },
   {
-    "statement": "Federico es más trabajador que Sergio. ¿Quién es más perezoso?",
-    "options": ["Federico", "Sergio"],
-    "answer": 1
+    "statement": "Alberto es más alegre que César. ¿Quién es más contento?",
+    "options": [
+      "Alberto",
+      "César"
+    ],
+    "answer": 0
   },
   {
-    "statement": "Alicia es más joven que Patricia. ¿Quién es mayor?",
-    "options": ["Alicia", "Patricia"],
-    "answer": 1
-  },
-  {
-    "statement": "Marcos es más alto que Felipe. ¿Quién es más bajo?",
-    "options": ["Marcos", "Felipe"],
-    "answer": 1
-  },
-  {
-    "statement": "Renata es más cuidadosa que Laura. ¿Quién es más descuidada?",
-    "options": ["Renata", "Laura"],
-    "answer": 1
-  },
-  {
-    "statement": "Óscar es más rico que Pedro. ¿Quién tiene menos dinero?",
-    "options": ["Óscar", "Pedro"],
-    "answer": 1
-  },
-  {
-    "statement": "Diana es más rápida que Sofía. ¿Quién necesita más tiempo?",
-    "options": ["Diana", "Sofía"],
-    "answer": 1
-  },
-  {
-    "statement": "Andrés es más grande que Mateo. ¿Quién es más pequeño?",
-    "options": ["Andrés", "Mateo"],
-    "answer": 1
-  },
-  {
-    "statement": "Elena es más generosa que Clara. ¿Quién comparte menos?",
-    "options": ["Elena", "Clara"],
-    "answer": 1
-  },
-  {
-    "statement": "Simón es más pesado que Hugo. ¿Quién pesa menos?",
-    "options": ["Simón", "Hugo"],
-    "answer": 1
-  },
-  {
-    "statement": "Rosa es más fuerte que Irene. ¿Quién es más débil?",
-    "options": ["Rosa", "Irene"],
-    "answer": 1
-  },
-  {
-    "statement": "Julián es más frío que Nicolás. ¿Quién es más cálido?",
-    "options": ["Julián", "Nicolás"],
-    "answer": 1
-  },
-  {
-    "statement": "Teresa es más ordenada que Carmen. ¿Quién es más desordenada?",
-    "options": ["Teresa", "Carmen"],
-    "answer": 1
-  },
-  {
-    "statement": "Ramón es más amable que Alberto. ¿Quién es más brusco?",
-    "options": ["Ramón", "Alberto"],
-    "answer": 1
-  },
-  {
-    "statement": "Inés es más clara que Fátima. ¿Quién es más oscura?",
-    "options": ["Inés", "Fátima"],
-    "answer": 1
-  },
-  {
-    "statement": "Enrique es más veloz que Tomás. ¿Quién es más lento?",
-    "options": ["Enrique", "Tomás"],
-    "answer": 1
-  },
-  {
-    "statement": "Noelia es más alta que Lidia. ¿Quién es más baja?",
-    "options": ["Noelia", "Lidia"],
-    "answer": 1
-  },
-  {
-    "statement": "Víctor es más educado que Cristian. ¿Quién es menos educado?",
-    "options": ["Víctor", "Cristian"],
-    "answer": 1
-  },
-  {
-    "statement": "Celeste es más delgada que Marisol. ¿Quién es más robusta?",
-    "options": ["Celeste", "Marisol"],
-    "answer": 1
-  },
-  {
-    "statement": "Darío es más inteligente que Fabián. ¿Quién tiene menor inteligencia?",
-    "options": ["Darío", "Fabián"],
-    "answer": 1
-  },
-  {
-    "statement": "Leticia es más puntual que Norma. ¿Quién se retrasa más?",
-    "options": ["Leticia", "Norma"],
-    "answer": 1
-  },
-  {
-    "statement": "Joel es más valiente que Samuel. ¿Quién tiene más miedo?",
-    "options": ["Joel", "Samuel"],
-    "answer": 1
-  },
-  {
-    "statement": "Celia es más limpia que Margarita. ¿Quién está más sucia?",
-    "options": ["Celia", "Margarita"],
-    "answer": 1
-  },
-  {
-    "statement": "René es más alegre que Javier. ¿Quién está más triste?",
-    "options": ["René", "Javier"],
-    "answer": 1
-  },
-  {
-    "statement": "Nadia es más silenciosa que Olivia. ¿Quién habla más?",
-    "options": ["Nadia", "Olivia"],
-    "answer": 1
-  },
-  {
-    "statement": "Sergio es más trabajador que Federico. ¿Quién trabaja menos?",
-    "options": ["Sergio", "Federico"],
-    "answer": 1
-  },
-  {
-    "statement": "Norma es más fría que Leticia. ¿Quién está más caliente?",
-    "options": ["Norma", "Leticia"],
-    "answer": 1
-  },
-  {
-    "statement": "Felipe es más bajo que Marcos. ¿Quién es más alto?",
-    "options": ["Felipe", "Marcos"],
-    "answer": 1
-  },
-  {
-    "statement": "Julia es más generosa que Elena. ¿Quién es más tacaña?",
-    "options": ["Julia", "Elena"],
-    "answer": 1
-  },
-  {
-    "statement": "Hugo es más ligero que Simón. ¿Quién pesa más?",
-    "options": ["Hugo", "Simón"],
-    "answer": 1
-  },
-  {
-    "statement": "Irene es más fuerte que Rosa. ¿Quién es más débil?",
-    "options": ["Irene", "Rosa"],
+    "statement": "Alberto es menos alegre que César. ¿Quién es más contento?",
+    "options": [
+      "Alberto",
+      "César"
+    ],
     "answer": 1
   }
 ]
