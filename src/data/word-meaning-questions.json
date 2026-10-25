@@ -1,901 +1,901 @@
 [
   {
-    "statement": "enfadado   feliz   alegre",
+    "statement": "triste   feliz   contento",
     "options": [
-      "enfadado",
+      "triste",
       "feliz",
-      "alegre"
+      "contento"
     ],
     "answer": 0
   },
   {
-    "statement": "grande   diminuto   enorme",
+    "statement": "veloz   pausado   rápido",
     "options": [
-      "grande",
-      "diminuto",
-      "enorme"
+      "veloz",
+      "pausado",
+      "rápido"
     ],
     "answer": 1
   },
   {
-    "statement": "rápido   veloz   lento",
+    "statement": "valiente   audaz   cobarde",
     "options": [
-      "rápido",
-      "veloz",
-      "lento"
+      "valiente",
+      "audaz",
+      "cobarde"
     ],
     "answer": 2
   },
   {
-    "statement": "ruidoso   tranquilo   silencioso",
+    "statement": "minúsculo   enorme   gigantesco",
     "options": [
-      "ruidoso",
-      "tranquilo",
-      "silencioso"
+      "minúsculo",
+      "enorme",
+      "gigantesco"
     ],
     "answer": 0
   },
   {
-    "statement": "comenzar   terminar   iniciar",
+    "statement": "comenzar   concluir   iniciar",
     "options": [
       "comenzar",
-      "terminar",
+      "concluir",
       "iniciar"
     ],
     "answer": 1
   },
   {
-    "statement": "ingenioso   inteligente   tonto",
-    "options": [
-      "ingenioso",
-      "inteligente",
-      "tonto"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "oscuro   brillante   reluciente",
-    "options": [
-      "oscuro",
-      "brillante",
-      "reluciente"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "cercano   distante   próximo",
-    "options": [
-      "cercano",
-      "distante",
-      "próximo"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "antiguo   viejo   moderno",
-    "options": [
-      "antiguo",
-      "viejo",
-      "moderno"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "peligroso   seguro   protegido",
-    "options": [
-      "peligroso",
-      "seguro",
-      "protegido"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "fuerte   débil   poderoso",
-    "options": [
-      "fuerte",
-      "débil",
-      "poderoso"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "valiente   intrépido   asustado",
-    "options": [
-      "valiente",
-      "intrépido",
-      "asustado"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "cruel   amable   bondadoso",
-    "options": [
-      "cruel",
-      "amable",
-      "bondadoso"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "sencillo   difícil   fácil",
-    "options": [
-      "sencillo",
-      "difícil",
-      "fácil"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "limpio   ordenado   desordenado",
+    "statement": "limpio   aseado   sucio",
     "options": [
       "limpio",
-      "ordenado",
-      "desordenado"
+      "aseado",
+      "sucio"
     ],
     "answer": 2
   },
   {
-    "statement": "pobre   adinerado   rico",
+    "statement": "hostil   amable   cordial",
     "options": [
-      "pobre",
-      "adinerado",
-      "rico"
+      "hostil",
+      "amable",
+      "cordial"
     ],
     "answer": 0
   },
   {
-    "statement": "mojado   seco   húmedo",
+    "statement": "luminoso   opaco   brillante",
     "options": [
-      "mojado",
-      "seco",
-      "húmedo"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "templado   caliente   helado",
-    "options": [
-      "templado",
-      "caliente",
-      "helado"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "ancho   delgado   esbelto",
-    "options": [
-      "ancho",
-      "delgado",
-      "esbelto"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "amplio   estrecho   ancho",
-    "options": [
-      "amplio",
-      "estrecho",
-      "ancho"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "corto   breve   extenso",
-    "options": [
-      "corto",
-      "breve",
-      "extenso"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "falso   correcto   verdadero",
-    "options": [
-      "falso",
-      "correcto",
-      "verdadero"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "hermoso   feo   bonito",
-    "options": [
-      "hermoso",
-      "feo",
-      "bonito"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "ruidoso   alto   tranquilo",
-    "options": [
-      "ruidoso",
-      "alto",
-      "tranquilo"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "robusto   frágil   delicado",
-    "options": [
-      "robusto",
-      "frágil",
-      "delicado"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "alegre   enfadado   feliz",
-    "options": [
-      "alegre",
-      "enfadado",
-      "feliz"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "enorme   grande   diminuto",
-    "options": [
-      "enorme",
-      "grande",
-      "diminuto"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "lento   veloz   rápido",
-    "options": [
-      "lento",
-      "veloz",
-      "rápido"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "silencioso   ruidoso   tranquilo",
-    "options": [
-      "silencioso",
-      "ruidoso",
-      "tranquilo"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "iniciar   comenzar   terminar",
-    "options": [
-      "iniciar",
-      "comenzar",
-      "terminar"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "tonto   inteligente   ingenioso",
-    "options": [
-      "tonto",
-      "inteligente",
-      "ingenioso"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "reluciente   oscuro   brillante",
-    "options": [
-      "reluciente",
-      "oscuro",
+      "luminoso",
+      "opaco",
       "brillante"
     ],
     "answer": 1
   },
   {
-    "statement": "próximo   cercano   distante",
+    "statement": "cercano   próximo   lejano",
     "options": [
-      "próximo",
       "cercano",
-      "distante"
+      "próximo",
+      "lejano"
     ],
     "answer": 2
   },
   {
-    "statement": "moderno   viejo   antiguo",
+    "statement": "débil   fuerte   resistente",
     "options": [
-      "moderno",
-      "viejo",
-      "antiguo"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "protegido   peligroso   seguro",
-    "options": [
-      "protegido",
-      "peligroso",
-      "seguro"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "poderoso   fuerte   débil",
-    "options": [
-      "poderoso",
+      "débil",
       "fuerte",
-      "débil"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "asustado   intrépido   valiente",
-    "options": [
-      "asustado",
-      "intrépido",
-      "valiente"
+      "resistente"
     ],
     "answer": 0
   },
   {
-    "statement": "bondadoso   cruel   amable",
+    "statement": "complicado   sencillo   difícil",
     "options": [
-      "bondadoso",
-      "cruel",
-      "amable"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "fácil   sencillo   difícil",
-    "options": [
-      "fácil",
+      "complicado",
       "sencillo",
       "difícil"
     ],
-    "answer": 2
-  },
-  {
-    "statement": "desordenado   ordenado   limpio",
-    "options": [
-      "desordenado",
-      "ordenado",
-      "limpio"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "rico   pobre   adinerado",
-    "options": [
-      "rico",
-      "pobre",
-      "adinerado"
-    ],
     "answer": 1
   },
   {
-    "statement": "húmedo   mojado   seco",
-    "options": [
-      "húmedo",
-      "mojado",
-      "seco"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "helado   caliente   templado",
-    "options": [
-      "helado",
-      "caliente",
-      "templado"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "esbelto   ancho   delgado",
-    "options": [
-      "esbelto",
-      "ancho",
-      "delgado"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "ancho   amplio   estrecho",
-    "options": [
-      "ancho",
-      "amplio",
-      "estrecho"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "extenso   breve   corto",
-    "options": [
-      "extenso",
-      "breve",
-      "corto"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "verdadero   falso   correcto",
-    "options": [
-      "verdadero",
-      "falso",
-      "correcto"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "bonito   hermoso   feo",
-    "options": [
-      "bonito",
-      "hermoso",
-      "feo"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "tranquilo   alto   ruidoso",
-    "options": [
-      "tranquilo",
-      "alto",
-      "ruidoso"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "delicado   robusto   frágil",
-    "options": [
-      "delicado",
-      "robusto",
-      "frágil"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "feliz   alegre   enfadado",
-    "options": [
-      "feliz",
-      "alegre",
-      "enfadado"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "diminuto   grande   enorme",
-    "options": [
-      "diminuto",
-      "grande",
-      "enorme"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "rápido   lento   veloz",
-    "options": [
-      "rápido",
-      "lento",
-      "veloz"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "tranquilo   silencioso   ruidoso",
-    "options": [
-      "tranquilo",
-      "silencioso",
-      "ruidoso"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "terminar   comenzar   iniciar",
-    "options": [
-      "terminar",
-      "comenzar",
-      "iniciar"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "ingenioso   tonto   inteligente",
-    "options": [
-      "ingenioso",
-      "tonto",
-      "inteligente"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "brillante   reluciente   oscuro",
-    "options": [
-      "brillante",
-      "reluciente",
-      "oscuro"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "distante   cercano   próximo",
-    "options": [
-      "distante",
-      "cercano",
-      "próximo"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "antiguo   moderno   viejo",
+    "statement": "antiguo   vetusto   reciente",
     "options": [
       "antiguo",
-      "moderno",
-      "viejo"
+      "vetusto",
+      "reciente"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "silencioso   ruidoso   estridente",
+    "options": [
+      "silencioso",
+      "ruidoso",
+      "estridente"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "bello   horrible   hermoso",
+    "options": [
+      "bello",
+      "horrible",
+      "hermoso"
     ],
     "answer": 1
   },
   {
-    "statement": "seguro   protegido   peligroso",
+    "statement": "seguro   protegido   expuesto",
     "options": [
       "seguro",
       "protegido",
-      "peligroso"
+      "expuesto"
     ],
     "answer": 2
   },
   {
-    "statement": "débil   fuerte   poderoso",
-    "options": [
-      "débil",
-      "fuerte",
-      "poderoso"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "valiente   asustado   intrépido",
-    "options": [
-      "valiente",
-      "asustado",
-      "intrépido"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "amable   bondadoso   cruel",
-    "options": [
-      "amable",
-      "bondadoso",
-      "cruel"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "difícil   sencillo   fácil",
-    "options": [
-      "difícil",
-      "sencillo",
-      "fácil"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "limpio   desordenado   ordenado",
-    "options": [
-      "limpio",
-      "desordenado",
-      "ordenado"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "adinerado   rico   pobre",
-    "options": [
-      "adinerado",
-      "rico",
-      "pobre"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "seco   mojado   húmedo",
-    "options": [
-      "seco",
-      "mojado",
-      "húmedo"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "templado   helado   caliente",
-    "options": [
-      "templado",
-      "helado",
-      "caliente"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "delgado   esbelto   ancho",
-    "options": [
-      "delgado",
-      "esbelto",
-      "ancho"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "estrecho   amplio   ancho",
+    "statement": "estrecho   ancho   amplio",
     "options": [
       "estrecho",
-      "amplio",
-      "ancho"
+      "ancho",
+      "amplio"
     ],
     "answer": 0
   },
   {
-    "statement": "corto   extenso   breve",
+    "statement": "empapado   seco   mojado",
     "options": [
-      "corto",
-      "extenso",
-      "breve"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "correcto   verdadero   falso",
-    "options": [
-      "correcto",
-      "verdadero",
-      "falso"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "feo   hermoso   bonito",
-    "options": [
-      "feo",
-      "hermoso",
-      "bonito"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "ruidoso   tranquilo   alto",
-    "options": [
-      "ruidoso",
-      "tranquilo",
-      "alto"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "frágil   delicado   robusto",
-    "options": [
-      "frágil",
-      "delicado",
-      "robusto"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "enfadado   alegre   feliz",
-    "options": [
-      "enfadado",
-      "alegre",
-      "feliz"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "enorme   diminuto   grande",
-    "options": [
-      "enorme",
-      "diminuto",
-      "grande"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "veloz   rápido   lento",
-    "options": [
-      "veloz",
-      "rápido",
-      "lento"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "ruidoso   silencioso   tranquilo",
-    "options": [
-      "ruidoso",
-      "silencioso",
-      "tranquilo"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "iniciar   terminar   comenzar",
-    "options": [
-      "iniciar",
-      "terminar",
-      "comenzar"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "inteligente   ingenioso   tonto",
-    "options": [
-      "inteligente",
-      "ingenioso",
-      "tonto"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "oscuro   reluciente   brillante",
-    "options": [
-      "oscuro",
-      "reluciente",
-      "brillante"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "próximo   distante   cercano",
-    "options": [
-      "próximo",
-      "distante",
-      "cercano"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "viejo   antiguo   moderno",
-    "options": [
-      "viejo",
-      "antiguo",
-      "moderno"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "peligroso   protegido   seguro",
-    "options": [
-      "peligroso",
-      "protegido",
-      "seguro"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "poderoso   débil   fuerte",
-    "options": [
-      "poderoso",
-      "débil",
-      "fuerte"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "intrépido   valiente   asustado",
-    "options": [
-      "intrépido",
-      "valiente",
-      "asustado"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "cruel   bondadoso   amable",
-    "options": [
-      "cruel",
-      "bondadoso",
-      "amable"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "fácil   difícil   sencillo",
-    "options": [
-      "fácil",
-      "difícil",
-      "sencillo"
-    ],
-    "answer": 1
-  },
-  {
-    "statement": "ordenado   limpio   desordenado",
-    "options": [
-      "ordenado",
-      "limpio",
-      "desordenado"
-    ],
-    "answer": 2
-  },
-  {
-    "statement": "pobre   rico   adinerado",
-    "options": [
-      "pobre",
-      "rico",
-      "adinerado"
-    ],
-    "answer": 0
-  },
-  {
-    "statement": "húmedo   seco   mojado",
-    "options": [
-      "húmedo",
+      "empapado",
       "seco",
       "mojado"
     ],
     "answer": 1
   },
   {
-    "statement": "caliente   templado   helado",
+    "statement": "alegre   jovial   melancólico",
+    "options": [
+      "alegre",
+      "jovial",
+      "melancólico"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "erróneo   correcto   acertado",
+    "options": [
+      "erróneo",
+      "correcto",
+      "acertado"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "indigente   rico   pobre",
+    "options": [
+      "indigente",
+      "rico",
+      "pobre"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "caliente   ardiente   frío",
     "options": [
       "caliente",
-      "templado",
-      "helado"
+      "ardiente",
+      "frío"
     ],
     "answer": 2
   },
   {
-    "statement": "ancho   esbelto   delgado",
+    "statement": "caótico   ordenado   organizado",
     "options": [
-      "ancho",
-      "esbelto",
-      "delgado"
+      "caótico",
+      "ordenado",
+      "organizado"
     ],
     "answer": 0
   },
   {
-    "statement": "ancho   estrecho   amplio",
+    "statement": "reservado   desenvuelto   tímido",
     "options": [
-      "ancho",
-      "estrecho",
-      "amplio"
+      "reservado",
+      "desenvuelto",
+      "tímido"
     ],
     "answer": 1
   },
   {
-    "statement": "breve   corto   extenso",
+    "statement": "fácil   simple   laborioso",
     "options": [
-      "breve",
-      "corto",
-      "extenso"
+      "fácil",
+      "simple",
+      "laborioso"
     ],
     "answer": 2
   },
   {
-    "statement": "falso   verdadero   correcto",
+    "statement": "angosto   ancho   espacioso",
     "options": [
-      "falso",
-      "verdadero",
-      "correcto"
+      "angosto",
+      "ancho",
+      "espacioso"
     ],
     "answer": 0
   },
   {
-    "statement": "bonito   feo   hermoso",
+    "statement": "ligero   lento   rápido",
     "options": [
-      "bonito",
-      "feo",
-      "hermoso"
+      "ligero",
+      "lento",
+      "rápido"
     ],
     "answer": 1
   },
   {
-    "statement": "alto   ruidoso   tranquilo",
+    "statement": "sabio   erudito   ignorante",
+    "options": [
+      "sabio",
+      "erudito",
+      "ignorante"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "amargo   dulce   azucarado",
+    "options": [
+      "amargo",
+      "dulce",
+      "azucarado"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "desocupado   lleno   vacío",
+    "options": [
+      "desocupado",
+      "lleno",
+      "vacío"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "flexible   maleable   rígido",
+    "options": [
+      "flexible",
+      "maleable",
+      "rígido"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "agitado   tranquilo   sereno",
+    "options": [
+      "agitado",
+      "tranquilo",
+      "sereno"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "práctico   inútil   útil",
+    "options": [
+      "práctico",
+      "inútil",
+      "útil"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "alto   elevado   bajo",
     "options": [
       "alto",
-      "ruidoso",
-      "tranquilo"
+      "elevado",
+      "bajo"
     ],
     "answer": 2
   },
   {
-    "statement": "robusto   delicado   frágil",
+    "statement": "claro   oscuro   sombrío",
     "options": [
-      "robusto",
-      "delicado",
-      "frágil"
+      "claro",
+      "oscuro",
+      "sombrío"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "desprendido   tacaño   generoso",
+    "options": [
+      "desprendido",
+      "tacaño",
+      "generoso"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "preciso   exacto   impreciso",
+    "options": [
+      "preciso",
+      "exacto",
+      "impreciso"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "pesado   ligero   liviano",
+    "options": [
+      "pesado",
+      "ligero",
+      "liviano"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "sincero   deshonesto   honesto",
+    "options": [
+      "sincero",
+      "deshonesto",
+      "honesto"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "nuevo   novedoso   usado",
+    "options": [
+      "nuevo",
+      "novedoso",
+      "usado"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "estrecho   ancho   holgado",
+    "options": [
+      "estrecho",
+      "ancho",
+      "holgado"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "acogedor   gélido   cálido",
+    "options": [
+      "acogedor",
+      "gélido",
+      "cálido"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "inteligente   perspicaz   necio",
+    "options": [
+      "inteligente",
+      "perspicaz",
+      "necio"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "escaso   abundante   copioso",
+    "options": [
+      "escaso",
+      "abundante",
+      "copioso"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "sano   enfermo   saludable",
+    "options": [
+      "sano",
+      "enfermo",
+      "saludable"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "humilde   modesto   arrogante",
+    "options": [
+      "humilde",
+      "modesto",
+      "arrogante"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "breve   largo   extenso",
+    "options": [
+      "breve",
+      "largo",
+      "extenso"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "arriesgado   seguro   peligroso",
+    "options": [
+      "arriesgado",
+      "seguro",
+      "peligroso"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "blando   suave   duro",
+    "options": [
+      "blando",
+      "suave",
+      "duro"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "desconocido   famoso   célebre",
+    "options": [
+      "desconocido",
+      "famoso",
+      "célebre"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "autorizado   prohibido   permitido",
+    "options": [
+      "autorizado",
+      "prohibido",
+      "permitido"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "frágil   quebradizo   sólido",
+    "options": [
+      "frágil",
+      "quebradizo",
+      "sólido"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "limitado   amplio   vasto",
+    "options": [
+      "limitado",
+      "amplio",
+      "vasto"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "árido   húmedo   seco",
+    "options": [
+      "árido",
+      "húmedo",
+      "seco"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "visible   perceptible   oculto",
+    "options": [
+      "visible",
+      "perceptible",
+      "oculto"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "común   raro   inusual",
+    "options": [
+      "común",
+      "raro",
+      "inusual"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "actual   anticuado   moderno",
+    "options": [
+      "actual",
+      "anticuado",
+      "moderno"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "vacilante   indeciso   determinado",
+    "options": [
+      "vacilante",
+      "indeciso",
+      "determinado"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "grosero   educado   cortés",
+    "options": [
+      "grosero",
+      "educado",
+      "cortés"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "derecho   curvo   recto",
+    "options": [
+      "derecho",
+      "curvo",
+      "recto"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "fiel   leal   traidor",
+    "options": [
+      "fiel",
+      "leal",
+      "traidor"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "superficial   profundo   hondo",
+    "options": [
+      "superficial",
+      "profundo",
+      "hondo"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "dinámico   pasivo   activo",
+    "options": [
+      "dinámico",
+      "pasivo",
+      "activo"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "bravo   feroz   manso",
+    "options": [
+      "bravo",
+      "feroz",
+      "manso"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "falso   real   auténtico",
+    "options": [
+      "falso",
+      "real",
+      "auténtico"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "anticipado   tardío   temprano",
+    "options": [
+      "anticipado",
+      "tardío",
+      "temprano"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "abierto   accesible   cerrado",
+    "options": [
+      "abierto",
+      "accesible",
+      "cerrado"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "desafortunado   afortunado   dichoso",
+    "options": [
+      "desafortunado",
+      "afortunado",
+      "dichoso"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "íntegro   incompleto   completo",
+    "options": [
+      "íntegro",
+      "incompleto",
+      "completo"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "prudente   cauteloso   imprudente",
+    "options": [
+      "prudente",
+      "cauteloso",
+      "imprudente"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "dulce   amargo   acre",
+    "options": [
+      "dulce",
+      "amargo",
+      "acre"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "inmóvil   movedizo   quieto",
+    "options": [
+      "inmóvil",
+      "movedizo",
+      "quieto"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "fresco   reciente   añejo",
+    "options": [
+      "fresco",
+      "reciente",
+      "añejo"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "falso   sincero   franco",
+    "options": [
+      "falso",
+      "sincero",
+      "franco"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "juvenil   anciano   joven",
+    "options": [
+      "juvenil",
+      "anciano",
+      "joven"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "capaz   competente   inepto",
+    "options": [
+      "capaz",
+      "competente",
+      "inepto"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "negro   blanco   níveo",
+    "options": [
+      "negro",
+      "blanco",
+      "níveo"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "espontáneo   obligatorio   voluntario",
+    "options": [
+      "espontáneo",
+      "obligatorio",
+      "voluntario"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "común   habitual   excepcional",
+    "options": [
+      "común",
+      "habitual",
+      "excepcional"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "espacioso   estrecho   reducido",
+    "options": [
+      "espacioso",
+      "estrecho",
+      "reducido"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "grato   desagradable   agradable",
+    "options": [
+      "grato",
+      "desagradable",
+      "agradable"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "rápido   precipitado   lento",
+    "options": [
+      "rápido",
+      "precipitado",
+      "lento"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "libre   cautivo   preso",
+    "options": [
+      "libre",
+      "cautivo",
+      "preso"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "beneficioso   perjudicial   útil",
+    "options": [
+      "beneficioso",
+      "perjudicial",
+      "útil"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "nítido   definido   borroso",
+    "options": [
+      "nítido",
+      "definido",
+      "borroso"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "inestable   firme   estable",
+    "options": [
+      "inestable",
+      "firme",
+      "estable"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "trabajador   perezoso   laborioso",
+    "options": [
+      "trabajador",
+      "perezoso",
+      "laborioso"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "severo   estricto   permisivo",
+    "options": [
+      "severo",
+      "estricto",
+      "permisivo"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "artificial   natural   espontáneo",
+    "options": [
+      "artificial",
+      "natural",
+      "espontáneo"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "económico   costoso   barato",
+    "options": [
+      "económico",
+      "costoso",
+      "barato"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "cuerdo   sensato   demente",
+    "options": [
+      "cuerdo",
+      "sensato",
+      "demente"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "interno   externo   exterior",
+    "options": [
+      "interno",
+      "externo",
+      "exterior"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "colectivo   privado   público",
+    "options": [
+      "colectivo",
+      "privado",
+      "público"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "anónimo   desconocido   famoso",
+    "options": [
+      "anónimo",
+      "desconocido",
+      "famoso"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "insuficiente   abundante   sobrado",
+    "options": [
+      "insuficiente",
+      "abundante",
+      "sobrado"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "riguroso   aproximado   exacto",
+    "options": [
+      "riguroso",
+      "aproximado",
+      "exacto"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "cómodo   confortable   incómodo",
+    "options": [
+      "cómodo",
+      "confortable",
+      "incómodo"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "culpable   inocente   cándido",
+    "options": [
+      "culpable",
+      "inocente",
+      "cándido"
+    ],
+    "answer": 0
+  },
+  {
+    "statement": "comprensivo   intolerante   tolerante",
+    "options": [
+      "comprensivo",
+      "intolerante",
+      "tolerante"
+    ],
+    "answer": 1
+  },
+  {
+    "statement": "respetuoso   considerado   insolente",
+    "options": [
+      "respetuoso",
+      "considerado",
+      "insolente"
+    ],
+    "answer": 2
+  },
+  {
+    "statement": "destruir   construir   edificar",
+    "options": [
+      "destruir",
+      "construir",
+      "edificar"
     ],
     "answer": 0
   }
